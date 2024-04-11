@@ -29,11 +29,11 @@ const Index = () => {
       <div className={styles.container}>
         <div className={styles.RowFlex}>
           <div className={styles.W70}>
-          <ScrollAnimation animateIn="flipInX">
+          <ScrollAnimation animateIn="fadeIn">
           <h1>Science</h1>
           </ScrollAnimation>
 
-          <ScrollAnimation animateIn="flipInX">
+          <ScrollAnimation animateIn="fadeIn">
             <h2>A human endeavor.</h2>
             </ScrollAnimation>
             <ScrollAnimation delay={2000} animateIn="fadeIn">
