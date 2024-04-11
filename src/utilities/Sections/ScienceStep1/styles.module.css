@@ -5,8 +5,24 @@
     background-repeat: no-repeat;
     width: 100%;   
     position: relative;
+    animation-name: zoomOut;
    
 }
+@keyframes zoomOut {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0;
+        transform: scale3d(.3,.3,.3)
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
 
 
   
@@ -39,11 +55,12 @@
     font-family: var(--bmd-font-Secondary);
     letter-spacing: -8.25px;
     line-height: normal;   
-    /* color: transparent;
-	animation: blur 10s ease-out infinite;
-	-webkit-animation: blur 10s ease-out infinite;    */
+   
     
 }
+
+
+
 .RowFlex h2{
     color: #0D4965;   
     font-size: 69px;

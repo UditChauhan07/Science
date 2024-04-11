@@ -9,7 +9,13 @@ const Index = () => {
         <div className={styles.RowFlex}>
           <div className={styles.W70}>
           <ScrollAnimation   animateIn="fadeIn">
-            <h1>Blue Zone</h1>
+          <div className={styles.ContentBox}>
+          <h3>BLUE ZONE</h3>
+          <h3>BLUE ZONE</h3>
+        </div>
+        <h1>BLUE ZONE</h1>
+            
+
             </ScrollAnimation>
             <ScrollAnimation   animateIn="fadeIn">
             <h2>Longevity.</h2>

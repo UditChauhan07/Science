@@ -18,6 +18,8 @@ const Index = () => {
   };
    
   return (
+
+    
     <div
       className={styles.height100vh}
       onMouseMove={handleMouseMove}
