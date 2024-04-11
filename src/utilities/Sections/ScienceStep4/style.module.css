@@ -1,0 +1,204 @@
+.height100vh {
+  /* height: 100vh;
+  background-color: gray;
+  background-image: url("/images/Farm to Table.png");
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1380px;
+  width: 100%;
+}
+.RowFlex {
+  display: flex;
+  text-align: end;
+  align-items: center;
+  height: 100vh;
+}
+
+.RowFlex h1 {
+  color: #fff;
+  font-size: 130px;
+  font-weight: 800;
+  font-family: var(--bmd-font-Secondary);
+  letter-spacing: normal;
+  line-height: 129px;
+  -webkit-text-fill-color: #000000c7;
+  -webkit-text-stroke-color: #97af98;
+  -webkit-text-stroke-width: 2px;
+  background: linear-gradient(96deg, #fff 0.59%, #eef9ff 96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 114px;
+  text-transform: capitalize;
+  width: 60%;
+  cursor: pointer;
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 3s;
+  -webkit-transition-timing-function: ease-out;
+  color: #222;
+  text-shadow: 0px 0px 0px white;
+  z-index: 3;
+  background: -webkit-linear-gradient(
+    left,
+    #ffcd00 0%,
+    #ffcd00 19%,
+    #ffcd00 38%,
+    #ffcd00 51%,
+    #3fafff 67%,
+    #3fafff 83%,
+    #3fafff 99%
+  );
+  -webkit-text-stroke: 5px rgba(255, 255, 255, 0.01);
+  -webkit-background-clip: text;
+
+}
+
+.RowFlex h3 {
+  color: #fff;
+  text-align: right;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+  font-family: var(--bmd-font-Secondary);
+  font-size: 59px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px;
+}
+.W80 {
+  justify-content: end;
+  display: flex;
+}
+.W80 p {
+  font-family: var(--bmd-font-Secondary);
+  font-size: 16px;
+  margin: 20px 0px;
+  color: #fff;
+  width: 60%;
+}
+.ReadMoreBtnWhite {
+  background-color: #fff;
+  color: #000;
+  font-family: var(--bmd-font-Secondary);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 15px 22px;
+  margin: 15px 0px;
+}
+.Mask {
+  -webkit-mask-image: url("/images/Science-page-Step-2.png");
+  mask-image: url("/images/Science-page-Step-2.png");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  justify-content: end;
+  display: flex;
+}
+
+@media  (max-width: 1599.98px)
+{
+
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+        width: 100%;
+    }
+    .RowFlex h1{
+        font-size: 65px;
+        width: 60%;
+    }
+    .RowFlex h2{
+        font-size: 92px;
+        bottom: 15px;
+        line-height: 112px;
+    }
+    .RowFlex h3{
+        font-size: 35px;
+    }
+    .W80 p{        
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden; 
+  }
+    
+    
+
+}
+@media  (max-width: 1100px)
+{
+    .container {
+             max-width: 900px;
+       
+    }
+
+}
+@media  (max-width: 768px)
+{
+    .container {
+             max-width: 650px;
+       
+    }
+    .W70 {
+      padding: 10px;
+      width: 100%;
+      background-color: #12140f59;
+      border-radius: 10px;
+    }
+    .RowFlex h1 {
+      line-height: 75px;
+  }
+  .W80 p{        
+    display: block;
+    
+}
+
+}
+@media  (max-width: 575px)
+{
+    .container {
+             max-width: 375px;
+       
+    }
+    .W80 {
+        width: 100%;
+    }
+    .RowFlex h2 {
+        font-size: 40px;
+        bottom: 5px;
+        line-height: 45px;
+    }
+   
+    .RowFlex h1 {
+        font-size: 35px;
+        letter-spacing: normal;
+        line-height: 42px;
+        -webkit-text-stroke: 3px rgba(255, 255, 255, 0.01);
+        
+    }
+    .RowFlex h3 {
+        font-size: 20px;
+    }
+    .W80 p {
+      font-family: var(--bmd-font-Secondary);
+      font-size: 16px;
+      margin: 20px 0px;
+      color: #fff;
+      width: 100%;
+  }
+
+}
+@media  (max-width: 475px)
+{
+    .container {
+             max-width: 275px;
+       
+    }
+    
+
+}

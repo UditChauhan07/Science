@@ -1,0 +1,293 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("https://cdn.shopify.com/s/files/1/0674/0518/5339/t/2/assets/GothamSSm-Book_Web.woff?v=106431077362625990591668075946");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("https://cdn.shopify.com/s/files/1/0674/0518/5339/t/2/assets/GothamSSm-Bold_Web.woff?v=175273074723104644111668075946");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+      
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      html,
+      body {
+        min-height: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      body {
+        font-family: "Lato", sans-serif;
+        overflow-x: hidden;
+      }
+
+      .ScienceScrollAnimation .header {
+        background: rgba(238, 238, 238, 0.5);
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1040;
+        transition: all 0.3s ease;
+      }
+      .ScienceScrollAnimation .header.is--active {
+        opacity: 1;
+        position: fixed;
+      }
+      .ScienceScrollAnimation .header__title {
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+       
+        color: white;
+        text-align: center;
+        font-weight: 300px;
+      }
+
+      .ScienceScrollAnimation .footer {
+        background: #333;
+        color: #eee;
+      }
+      .ScienceScrollAnimation .footer__copyright {
+        text-align: center;
+        font-weight: 300;
+        margin: 0;
+        padding-bottom: 12px;
+      }
+      .ScienceScrollAnimation .footer__text {
+        text-align: center;
+       
+        margin: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
+
+      .ScienceScrollAnimation .section-navigate {
+        position: fixed;
+        top: 50%;
+        right: 1em;
+        transform: translateY(-50%);
+        z-index: 1031;
+        opacity: 1;
+        transition: opacity 0.05s ease;
+      }
+      .ScienceScrollAnimation .section-navigate.is--inactive {
+        opacity: 0;
+      }
+      .ScienceScrollAnimation .section-navigate__items:before {
+        content: "";
+        width: 1px;
+        height: 180%;
+        background: linear-gradient(
+          transparent 0,
+          white 15%,
+          white 85%,
+          transparent
+        );
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .ScienceScrollAnimation .section-navigate__link {
+        text-decoration: none;
+        position: relative;
+      }
+      .ScienceScrollAnimation .section-navigate__link:before {
+        content: "●";
+        width: 20px;
+        height: 20px;
+        font-size: 13px;
+        line-height: 26px;
+        color: white;
+        position: relative;
+        left: 2px;
+      }
+      .section-navigate__link:hover .section-navigate__name {
+        opacity: 1;
+      }
+      .section-navigate__link.is--active:before {
+        content: "●";
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        left: 0;
+      }
+      .ScienceScrollAnimation .section-navigate__name {
+        position: absolute;
+        top: 5px;
+        right: 23px;
+        color: white;
+        font-size: 12px;
+       
+        font-weight: 100;
+        letter-spacing: 2px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+
+      .ScienceScrollAnimation .section__first,
+      .ScienceScrollAnimation .section__second,
+      .ScienceScrollAnimation .section__third,
+      .ScienceScrollAnimation .section__fourth,
+      .ScienceScrollAnimation .section__fifth {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 6em;
+        
+        font-weight: bold;
+        font-weight: 300;
+        color: white;
+        transition: opacity 0.4s ease;
+      }
+      .ScienceScrollAnimation ul.section-navigate__items.js--navigate-items {
+        display: none;
+    }
+    .ScienceScrollAnimation .section__first.is--inactive,
+    .ScienceScrollAnimation .section__second.is--inactive,
+    .ScienceScrollAnimation .section__third.is--inactive,
+    .ScienceScrollAnimation .section__fourth.is--inactive,
+    .ScienceScrollAnimation .section__fifth.is--inactive {
+        opacity: 0;
+      }
+      .ScienceScrollAnimation .section__first {
+        position: relative;
+      }
+      .ScienceScrollAnimation .section__first-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .ScienceScrollAnimation .section__first-title {
+        font-size: 36px;
+        text-align: center;
+        line-height: 1.5;
+        width: 85%;
+      }
+      .ScienceScrollAnimation .section__second {
+        background: #7facc0;
+        background-image: url(https://brunomdx-science.vercel.app/images/Science-page-without-Doctor01.png);
+        display: flex;
+        flex-direction: column;
+      }
+      .ScienceScrollAnimation .section__second .section-card__content,
+      .ScienceScrollAnimation .section__second .section-card__title {
+        text-align: center;
+      }
+      .ScienceScrollAnimation .section__second .section-card__title {
+        font-size: 16px;
+      }
+      .ScienceScrollAnimation .section__second .section-card__content {
+        font-size: 14px;
+        text-transform: none;
+        line-height: 1.4;
+        letter-spacing: 1px;
+      }
+      .ScienceScrollAnimation .section__second-card {
+        width: 27.5%;
+        margin-left: 20px;
+        margin-right: 20px;
+        background: rgba(0, 0, 0, 0.15);
+        padding: 10px;
+        box-shadow: 1px 1px 7px black;
+      }
+      .ScienceScrollAnimation .section__second-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .ScienceScrollAnimation .section__third {
+        background: #7facc0;       
+        display: flex;
+        flex-direction: column;
+        background-image: url("/images/Science-page-Step-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+      }
+      .ScienceScrollAnimation .section__third-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .ScienceScrollAnimation .section__third-left,
+      .ScienceScrollAnimation .section__third-right {
+        font-size: 12px;       
+        line-height: 1.5;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+      }
+      .ScienceScrollAnimation .section__third-title {
+        text-align: center;
+        margin: 10px;
+      }
+      .ScienceScrollAnimation .section__fourth {
+        background-image: url("/images/blue-zone-banner.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        position: relative;
+
+      }
+      .ScienceScrollAnimation .section__fourth-content {
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 36px;
+        line-height: 1.4;
+      }
+      .ScienceScrollAnimation .section__fourth-title {
+        margin-top: 80px;
+        font-size: 36px;
+        font-weight: 600;
+        text-align: center;
+            }
+        .ScienceScrollAnimation .section__fifth {
+        position: relative;
+        background-color: gray;
+    background-image: url("/images/Farm to Table.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+      }
+      .ScienceScrollAnimation .section__six {
+        position: relative;
+        background-color: gray;
+    background-image: url("/images/Nature-meet-pharma.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+      }
+      .ScienceScrollAnimation button{
+        border: unset;
+      }
