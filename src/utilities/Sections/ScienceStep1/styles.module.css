@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;   
+    position: relative;
    
 }
 
@@ -90,15 +91,16 @@
     font-size: 18px;
     font-weight: 400;
     padding: 15px 22px;
-    margin: 15px 0px; 
+    margin: 15px 0px;
+    cursor: pointer; 
 }
 .hiddenParagraph{
     position: absolute;
     background-color: #fff;
     padding: 20px 15px;
     width: 100%;
-    top: 0;
-    bottom: 50%;
+    /* top: 0; */
+    bottom: 0%;
     left: 0;
     transition-property: all;
     transition-duration: .5s;
@@ -107,7 +109,7 @@
     /* max-height: 300px; */
     overflow-y: hidden;
     /* max-height: 500px; */
-    display: none;
+    
 }
 .hiddenParagraph h3{
     color: #000;
