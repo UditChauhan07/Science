@@ -31,6 +31,15 @@
   -webkit-text-stroke-color: #97af98;
   -webkit-text-stroke-width: 2px;
 }
+.hiddenParagraph p{
+  padding-bottom: 15px;
+  line-height: 24px;
+
+}
+.hiddenParagraph h3{
+  padding-bottom: 20px;
+
+}
 
 .RowFlex h3 {
   color: #fff;
@@ -52,6 +61,7 @@
   margin: 20px 0px;
   color: #fff;
   width: 60%;
+  line-height: 24px;
 }
 .ReadMoreBtnWhite {
   background-color: #fff;

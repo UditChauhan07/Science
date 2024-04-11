@@ -26,6 +26,15 @@
 .W80 {
   width: 65%;
 }
+.hiddenParagraph p{
+  padding-bottom: 15px;
+  line-height: 24px;
+
+}
+.hiddenParagraph h3{
+  padding-bottom: 20px;
+
+}
 
 .RowFlex h1 {
   color: #000;
@@ -69,6 +78,7 @@
   font-size: 16px;
   margin: 20px 0px;
   color: #fff;
+  line-height: 24px;
 }
 .ReadMoreBtn {
   background-color: #000;

@@ -19,7 +19,15 @@
   align-items: center;
   height: 100vh;
 }
+.hiddenParagraph p{
+  padding-bottom: 15px;
+  line-height: 24px;
 
+}
+.hiddenParagraph h3{
+  padding-bottom: 20px;
+
+}
 .RowFlex h1 {
   color: #fff;
   font-size: 130px;
@@ -82,6 +90,7 @@
   margin: 20px 0px;
   color: #fff;
   width: 60%;
+  line-height: 24px;
 }
 .ReadMoreBtnWhite {
   background-color: #fff;
