@@ -66,6 +66,12 @@
         text-align: center;
         font-weight: 300px;
       }
+      .height100Vh{
+        height: 100vh;
+        display: block;
+        overflow: hidden;
+
+      }
      
 
       .ScienceScrollAnimation .footer {

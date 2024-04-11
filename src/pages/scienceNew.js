@@ -258,7 +258,7 @@ const Science = () => {
         class="section__first is--scrolled js--scrollify"
         data-section-name="first"
       >
-        <div>
+        <div className="height100Vh">
           <video width="1920" height="auto" loop autoPlay muted>
             <source
               src="https://cdn.shopify.com/videos/c/o/v/b45c94600c184f59a34a27c3f428ca33.mp4"

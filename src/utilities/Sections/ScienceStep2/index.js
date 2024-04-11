@@ -3,6 +3,11 @@ import styles from "./styles.module.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const Index = () => {
+  const toggleVisibility = () => {
+    setIsVisible(!isVisible);
+  };
+   
+
   return (
     <div>
       <div className={`${styles.height100vh} ${styles.bg} `}>
@@ -32,15 +37,15 @@ const Index = () => {
         <li></li> 
         <li></li>  */}
     </ul>
-    <ScrollAnimation  animateIn="fadeIn">
+    <ScrollAnimation delay={1000} animateIn="fadeInUp">
     <div className={styles.Mask}>
                 <h1>Understand the world</h1>
               </div>
           </ScrollAnimation>
-          <ScrollAnimation delay={1000} animateIn="fadeIn">
+          <ScrollAnimation delay={4000} animateIn="fadeInUp">
               <h3>Unlocking Nature’s Secrets</h3>
               </ScrollAnimation>
-              <ScrollAnimation delay={1500} animateIn="fadeIn">
+              <ScrollAnimation delay={5000} animateIn="fadeInUp">
               <div className={styles.W80}>
                 <p>
                   Polyphenols are compounds in many plant-based foods, such as
@@ -50,13 +55,15 @@ const Index = () => {
                 </p>
               </div>
               </ScrollAnimation>
-              <ScrollAnimation delay={3000} animateIn="fadeIn">
+              <ScrollAnimation delay={6000} animateIn="fadeInUp">
               <div>
                 <button className={styles.ReadMoreBtnWhite}>Read More</button>
               </div>
               </ScrollAnimation>
             </div>
           </div>
+
+          
         </div>
       </div>
     </div>

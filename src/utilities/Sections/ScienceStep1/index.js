@@ -31,17 +31,17 @@ const Index = () => {
       <div className={styles.container}>
         <div className={styles.RowFlex}>
           <div className={styles.W70}>
-          <ScrollAnimation animateIn="fadeIn">
+          <ScrollAnimation delay={1500} animateIn="fadeInUp">
           <h1>Science</h1>
           </ScrollAnimation>
 
-          <ScrollAnimation animateIn="fadeIn">
+          <ScrollAnimation delay={2000} animateIn="fadeInUp">
             <h2>A human endeavor.</h2>
             </ScrollAnimation>
-            <ScrollAnimation delay={2000} animateIn="fadeIn">
+            <ScrollAnimation delay={4000} animateIn="fadeInUp">
             <h3>Pharma, Meet Nature</h3>
             </ScrollAnimation>
-            <ScrollAnimation delay={2500} animateIn="fadeIn">
+            <ScrollAnimation delay={5000} animateIn="fadeInUp">
             <div className={styles.W80}>
               <p>
                 Bruno MD is committed to furthering our understanding of the
@@ -51,7 +51,7 @@ const Index = () => {
               </p>
             </div>
             </ScrollAnimation>
-            <ScrollAnimation delay={3000} animateIn="fadeIn">
+            <ScrollAnimation delay={6000} animateIn="fadeInUp">
             <div>
               <button onClick={toggleVisibility} className={styles.ReadMoreBtn}>
                 Read More
