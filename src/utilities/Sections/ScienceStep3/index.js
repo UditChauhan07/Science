@@ -15,7 +15,7 @@ const Index = () => {
       <div className={styles.container}>
         <div className={styles.RowFlex}>
           <div className={styles.W70}>
-          <ScrollAnimation  delay={1500} animateIn="fadeInUp">
+          <ScrollAnimation  delay={600} animateIn="fadeInUp">
           <div className={styles.ContentBox}>
           <h3>BLUE ZONE</h3>
           <h3>BLUE ZONE</h3>
@@ -24,13 +24,13 @@ const Index = () => {
             
 
             </ScrollAnimation>
-            <ScrollAnimation delay={2000}  animateIn="fadeInUp">
+            <ScrollAnimation delay={1200}  animateIn="fadeInUp">
             <h2>Longevity.</h2>
             </ScrollAnimation>
-            <ScrollAnimation delay={4000} animateIn="fadeInUp">
+            <ScrollAnimation delay={3000} animateIn="fadeInUp">
             <h3>Live Healthier, Longer Lives</h3>
             </ScrollAnimation>
-            <ScrollAnimation delay={5000} animateIn="fadeInUp">
+            <ScrollAnimation delay={4000} animateIn="fadeInUp">
             <div className={styles.W80}>
               <p>
                 Many pharmacological companies are scaled international
@@ -46,7 +46,7 @@ const Index = () => {
              
             </div>
             </ScrollAnimation>
-            <ScrollAnimation delay={6000} animateIn="fadeInUp">
+            <ScrollAnimation delay={5000} animateIn="fadeInUp">
             <div>
               <button  onClick={toggleVisibility} className={styles.ReadMoreBtn}>Read More</button>
             </div>

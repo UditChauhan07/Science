@@ -13,16 +13,16 @@ const Index = () => {
       <div className={styles.container}>
         <div className={styles.RowFlex}>
           <div className={styles.W70}>
-          <ScrollAnimation delay={1000} animateIn="fadeInUp">
+          <ScrollAnimation delay={600} animateIn="fadeInUp">
             <h1>Nature,</h1>
             </ScrollAnimation>
-            <ScrollAnimation delay={1500} animateIn="fadeInUp">
+            <ScrollAnimation delay={1200} animateIn="fadeInUp">
             <h2>Meet Pharma.</h2>
             </ScrollAnimation>
-            <ScrollAnimation delay={4000} animateIn="fadeInUp">
+            <ScrollAnimation delay={3000} animateIn="fadeInUp">
             <h3>Clinically Proven Ingredients</h3>
             </ScrollAnimation>
-            <ScrollAnimation delay={5000} animateIn="fadeInUp">
+            <ScrollAnimation delay={4000} animateIn="fadeInUp">
             <div className={styles.W80}>
               <p>
                 When a company makes a claim, it should be transparent and
@@ -33,7 +33,7 @@ const Index = () => {
               </p>
             </div>
             </ScrollAnimation>
-            <ScrollAnimation delay={6000} animateIn="fadeIn">
+            <ScrollAnimation delay={5000} animateIn="fadeIn">
             <div>
               <button  onClick={toggleVisibility} className={styles.ReadMoreBtnWhite} >Read More</button>
             </div>
@@ -47,7 +47,7 @@ const Index = () => {
           <div className={`${styles.hiddenParagraph} ${styles.animated} ${styles.fadeInUp} ${styles.animatedFadeInUp}`}>  
           <div className={styles.container}>
 
-            <h3>Pharma, Meet Nature</h3>
+            <h3>  Nature Meet, Pharma </h3>
             <p>
             Bruno MD is committed to furthering our understanding of the power of natural substances to improve human health and longevity. This goal is a moving target. One not easily achieved. Nature is not always willing to show us her hand. Pharmacology is another path to improving human health, and Bruno also does this. We are the third-largest pharmaceutical company in Italy today. 
             </p>

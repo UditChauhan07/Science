@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     width: 100%;   
     position: relative;
-    animation-name: zoomOut;
+    animation-name: zoomOut;   
    
 }
 @keyframes zoomOut {
@@ -60,7 +60,6 @@
 }
 
 
-
 .RowFlex h2{
     color: #0D4965;   
     font-size: 69px;
@@ -70,6 +69,7 @@
     line-height: normal;
     bottom: 30px;
     position: relative;
+    text-shadow: 2px 2px 5px #bababa;
    
     
 }
