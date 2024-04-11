@@ -4,6 +4,8 @@
   background-image: url("/images/Farm to Table.png");
   background-size: cover;
   background-repeat: no-repeat; */
+  position: relative;
+  width: 100%;
 }
 .container {
   margin-left: auto;
@@ -98,6 +100,98 @@
   justify-content: end;
   display: flex;
 }
+
+
+.hiddenParagraph{
+  position: absolute;
+  background-color: #fff;
+  padding: 20px 15px;
+  width: 100%;
+  /* top: 0; */
+  bottom: 0%;
+  left: 0;
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  /* overflow: auto; */
+  /* max-height: 300px; */
+  overflow-y: hidden;
+  /* max-height: 500px; */
+  
+}
+.hiddenParagraph h3{
+  color: #000;
+  font-size: 60px;
+  font-family: var(--bmd-font-Secondary);
+  
+}
+.hiddenParagraph p{
+  color: #000;
+  font-family: var(--bmd-font-Secondary);
+  font-size: 18px;
+}
+
+.hiddenParagraph span{
+          background-color: #fff;
+          width: 30px;
+  font-family: var(--bmd-font-Secondary);
+font-weight: 900;
+          height: 30px;
+          border-radius: 100%;
+          border: 2px solid #000;
+      font-size: 17px;
+      color: #000;
+      position: absolute;
+      top: 5%;
+      right: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+  }
+
+  /* Fade up css */
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+/* fade up end */
+
 
 @media  (max-width: 1599.98px)
 {

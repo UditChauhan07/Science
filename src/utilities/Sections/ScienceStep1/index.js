@@ -70,7 +70,7 @@ const Index = () => {
           <div className={`${styles.hiddenParagraph} ${styles.animated} ${styles.fadeInUp} ${styles.animatedFadeInUp}`}>  
           <div className={styles.container}>
 
-            <h3>Pharma, Meet Nature</h3>
+            <h3>Science, A human endeavor</h3>
             <p>
             Bruno MD is committed to furthering our understanding of the power of natural substances to improve human health and longevity. This goal is a moving target. One not easily achieved. Nature is not always willing to show us her hand. Pharmacology is another path to improving human health, and Bruno also does this. We are the third-largest pharmaceutical company in Italy today. 
             </p>
