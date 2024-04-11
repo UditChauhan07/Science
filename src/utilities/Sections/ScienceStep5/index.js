@@ -27,9 +27,11 @@ const Index = () => {
               </p>
             </div>
             </ScrollAnimation>
+            <ScrollAnimation delay={3000} animateIn="fadeIn">
             <div>
               <button className={styles.ReadMoreBtnWhite} >Read More</button>
             </div>
+            </ScrollAnimation>
           </div>
         </div>
       </div>

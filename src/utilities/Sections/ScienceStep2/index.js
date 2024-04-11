@@ -32,15 +32,15 @@ const Index = () => {
         <li></li> 
         <li></li>  */}
     </ul>
-    <ScrollAnimation animateIn="bounceInRight">
+    <ScrollAnimation  animateIn="fadeIn">
     <div className={styles.Mask}>
                 <h1>Understand the world</h1>
               </div>
           </ScrollAnimation>
-          <ScrollAnimation delay={1500} animateIn="fadeIn">
+          <ScrollAnimation delay={1000} animateIn="fadeIn">
               <h3>Unlocking Nature’s Secrets</h3>
               </ScrollAnimation>
-              <ScrollAnimation delay={1800} animateIn="fadeIn">
+              <ScrollAnimation delay={1500} animateIn="fadeIn">
               <div className={styles.W80}>
                 <p>
                   Polyphenols are compounds in many plant-based foods, such as
@@ -50,9 +50,11 @@ const Index = () => {
                 </p>
               </div>
               </ScrollAnimation>
+              <ScrollAnimation delay={3000} animateIn="fadeIn">
               <div>
                 <button className={styles.ReadMoreBtnWhite}>Read More</button>
               </div>
+              </ScrollAnimation>
             </div>
           </div>
         </div>

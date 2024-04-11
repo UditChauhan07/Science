@@ -8,16 +8,16 @@ const Index = () => {
       <div className={styles.container}>
         <div className={styles.RowFlex}>
           <div className={styles.W70}>
-          <ScrollAnimation   animateIn="bounceInLeft">
+          <ScrollAnimation   animateIn="fadeIn">
             <h1>Blue Zone</h1>
             </ScrollAnimation>
-            <ScrollAnimation   animateIn="bounceInRight">
+            <ScrollAnimation   animateIn="fadeIn">
             <h2>Longevity.</h2>
             </ScrollAnimation>
-            <ScrollAnimation delay={800} animateIn="bounceInLeft">
+            <ScrollAnimation delay={1000} animateIn="fadeIn">
             <h3>Live Healthier, Longer Lives</h3>
             </ScrollAnimation>
-            <ScrollAnimation delay={1000} animateIn="fadeIn">
+            <ScrollAnimation delay={1500} animateIn="fadeIn">
             <div className={styles.W80}>
               <p>
                 Many pharmacological companies are scaled international
@@ -33,9 +33,11 @@ const Index = () => {
              
             </div>
             </ScrollAnimation>
+            <ScrollAnimation delay={3000} animateIn="fadeIn">
             <div>
               <button className={styles.ReadMoreBtn}>Read More</button>
             </div>
+            </ScrollAnimation>
           </div>
         </div>
       </div>
