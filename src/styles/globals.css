@@ -214,7 +214,7 @@
       }
       .ScienceScrollAnimation .section__science {
         background: #7facc0;
-        background-image: url(https://brunomdx-science.vercel.app/images/Science-page-without-Doctor01.png);
+        background-image: url("/images/Science-page-without-Doctor01.png");
         display: flex;
         flex-direction: column;
       }
