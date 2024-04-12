@@ -95,7 +95,7 @@ const Index = () => {
               </p>
               <p>
               The goal is to deliver 100% of a
-                plant's food-grade benefits into your body without altering the
+                plant&apos;s food-grade benefits into your body without altering the
                 botanical itself. In other words, let Nature do what she does
                 best. To do this, natural derivatives must balance
                 hydrophilicity (the ability to dissolve in gastrointestinal

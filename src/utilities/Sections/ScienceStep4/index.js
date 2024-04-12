@@ -102,7 +102,7 @@ const Index = () => {
                 provide anti-inflammatory benefits. The over 60+ flavonoids
                 found in our Red Orange Complex can encourage heart health, help
                 maintain cholesterol levels in the healthy range, and boost
-                cognitive function. If our ingredients can't be grown on Italian
+                cognitive function. If our ingredients can&apos;t be grown on Italian
                 soil, Bruno MD searches worldwide for farmers and ingredients
                 that live up to the same standards, then transforms them into
                 products that deliver 100% food-grade composition and the
