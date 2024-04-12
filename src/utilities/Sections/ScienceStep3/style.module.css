@@ -66,8 +66,9 @@ background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 160px;
-    top: -15px;
+    top: -28px;
     position: relative;
+    
 }
 .RowFlex h3{
     color: #000;   
@@ -76,15 +77,23 @@ background-clip: text;
     font-family: var(--bmd-font-Secondary);
     letter-spacing: 0px;
     line-height: normal; 
-    text-transform: uppercase; 
+    text-transform: uppercase;
     
+    
+}
+.LiveHealter{
+    /* padding-top: 30px; */
 }
 .W80 p{
     font-family: var(--bmd-font-Secondary);
     font-size: 16px;
     margin: 20px 0px;
-    line-height: 24px; 
+    line-height: 24px;
+    margin-top: 0; 
 }
+.W80 p{
+    line-height: 30px !important;
+  }
 .ReadMoreBtn{
     background-color: #000;
     color: #fff;
@@ -128,6 +137,7 @@ background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 
 @keyframes animate {
 
@@ -270,6 +280,7 @@ background-clip: text;
         font-size: 92px;
         bottom: 15px;
         line-height: 112px;
+        height: 200px;
     }
     .RowFlex h3{
         font-size: 35px;

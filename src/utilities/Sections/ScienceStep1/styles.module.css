@@ -167,6 +167,7 @@ font-weight: 900;
         align-items: center;
         cursor: pointer;
     }
+    
 
 
 /* Fade up css */
@@ -227,20 +228,21 @@ font-weight: 900;
     }
     .RowFlex h2{
         font-size: 42px;
-        bottom: 15px;
+        bottom: 24px;
     }
     .RowFlex h3{
         font-size: 40px;
     }
     .W80 {
-        width: 50%;
+        width: 60%;
     }
     
     .W80 p{        
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
-        overflow: hidden; 
+        overflow: hidden;
+        margin-top: 0px; 
     }
     .hiddenParagraph p{
         color: #000;
@@ -282,7 +284,7 @@ font-weight: 900;
 @media  (max-width: 575px)
 {
     .container {
-             max-width: 375px;
+             max-width: 90%;
        
     }
     .W80 {
@@ -307,7 +309,7 @@ font-weight: 900;
 @media  (max-width: 475px)
 {
     .container {
-             max-width: 275px;
+             max-width: 90%;
        
     }
     

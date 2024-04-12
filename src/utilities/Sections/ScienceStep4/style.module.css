@@ -37,8 +37,8 @@
   line-height: 129px;
   -webkit-text-fill-color: #000000c7;
   -webkit-text-stroke-color: #97af98;
-  -webkit-text-stroke-width: 2px;
-  background: linear-gradient(96deg, #fff 0.59%, #eef9ff 96%);
+  /* -webkit-text-stroke-width: 2px; */
+  /* background: linear-gradient(96deg, #fff 0.59%, #eef9ff 96%); */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -54,20 +54,19 @@
   -webkit-transition-timing-function: ease-out;
   color: #222;
   text-shadow: 0px 0px 0px white;
-  z-index: 3;
-  background: -webkit-linear-gradient(
-    left,
-    #ffcd00 0%,
-    #ffcd00 19%,
-    #ffcd00 38%,
-    #ffcd00 51%,
-    #3fafff 67%,
-    #3fafff 83%,
-    #3fafff 99%
-  );
+  /* z-index: 3; */
+  /* background: -webkit-linear-gradient(
+  left,
+  #ffcd00 0%,
+  #ffcd00 19%,
+  #ffcd00 38%,
+  #ffcd00 51%,
+  #3fafff 67%,
+  #3fafff 83%,
+  #3fafff 99%
+); */
   -webkit-text-stroke: 5px rgba(255, 255, 255, 0.01);
   -webkit-background-clip: text;
-
 }
 
 .RowFlex h3 {
@@ -138,6 +137,41 @@
   color: #000;
   font-family: var(--bmd-font-Secondary);
   font-size: 18px;
+}
+.W80 p{
+  line-height: 30px !important;
+}
+
+/* BORDER FILL ANIMATION */
+.animateCh {
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(
+    left,
+    #ffcd00 0%,
+    /* #ffcd00 19%, */
+    #ffcd00 38%,
+    #ffcd00 51%,
+    #3fafff 67%,
+    /* #3fafff 83%, */
+    #3fafff 99%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 8s linear infinite;
+  display: inline-block;
+  font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .hiddenParagraph span{
@@ -227,7 +261,8 @@ font-weight: 900;
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
-      overflow: hidden; 
+      overflow: hidden;
+      margin-top: 0; 
   }
     
     

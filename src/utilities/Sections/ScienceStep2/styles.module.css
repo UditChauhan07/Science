@@ -28,8 +28,11 @@
   letter-spacing: normal;
   line-height: 129px;
   -webkit-text-fill-color: #000000c7;
-  -webkit-text-stroke-color: #97af98;
-  -webkit-text-stroke-width: 2px;
+  /* -webkit-text-stroke-color: #97af98;
+  -webkit-text-stroke-width: 2px;   */
+  background-image: url("/images/bgBack.png");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .hiddenParagraph p{
   padding-bottom: 15px;
@@ -41,14 +44,85 @@
 
 }
 
+.W70 .ContentBox h1:nth-child(2) {
+  color: #63B8E6;
+  /* color:  linear-gradient(90deg, #2f80cb, #68defa 90.94%); */
+  /* color: linear-gradient(180deg, red, yellow); */
+  animation: animate 4s ease-in-out infinite;
+  
+  background-image: url("/images/bgBack.png");
+  -webkit-background-clip: text;
+  -webkit-background-clip: text;
+ 
+}
+.W70 .ContentBox {
+  position: relative;
+}
+
+.W70 .ContentBox h3 {
+  color: #fff;
+  position: absolute;
+  font-family: var(--bmd-font-Secondary);
+  font-size: 113px;
+  font-weight: 700;
+  line-height: 114px;  
+  
+
+}
+
+.W70 .ContentBox h3:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 4px #97AF98;
+  /* text-shadow: 0px 2px 15px rgba(255, 255, 255, 0.21); */
+  background: transparent;
+}
+
+.W70 .ContentBox h3:nth-child(2) {
+  
+  color: transparent;
+  background-image: url("/images/bgBack.png");
+  -webkit-background-clip: text;
+  -webkit-background-clip: text;
+ 
+}
+
+
+@keyframes animate {
+
+  0%,
+  100% {
+      clip-path: polygon(0% 45%,
+              16% 44%,
+              33% 50%,
+              54% 60%,
+              70% 61%,
+              84% 59%,
+              100% 52%,
+              100% 100%,
+              0% 100%);
+  }
+
+  50% {
+      clip-path: polygon(0% 60%,
+              15% 65%,
+              34% 66%,
+              51% 62%,
+              67% 50%,
+              84% 45%,
+              100% 46%,
+              100% 100%,
+              0% 100%);
+  }
+}
+
 .RowFlex h3 {
   color: #fff;
   text-align: right;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+  /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8); */
   font-family: var(--bmd-font-Secondary);
   font-size: 59px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 70px;
 }
 .W80 {
@@ -310,6 +384,9 @@ ul.fireflies {
   animation-duration: 59s, 75s, 0.01s;
   animation-fill-mode: backwards, backwards;
 }
+.W80 p{
+  line-height: 30px !important;
+}
 
 /* animations */
 
@@ -408,6 +485,7 @@ ul.fireflies {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
+    margin-top: 0;
   }
 }
 @media (max-width: 1100px) {

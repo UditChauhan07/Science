@@ -79,6 +79,10 @@
   margin: 20px 0px;
   color: #fff;
   line-height: 24px;
+  margin-top: 5px;
+}
+.W80 p{
+  line-height: 30px !important;
 }
 .ReadMoreBtn {
   background-color: #000;

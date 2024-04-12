@@ -8,11 +8,16 @@ import scienza from "../../json/scienza.json";
 import PageHead from "@/utilities/Head";
 import SEO from "../../json/SEO.json";
 import MasterHeadImg from "@/utilities/MasterHeadImg";
+import Headers from "@/utilities/HeaderScienceNew";
+import data from '../../json/layout.json'
+
 
 import Footer from "@/utilities/Footer/";
+
 const ScienceNew = ({ version }) => {
-  const { masterHead, Step01, Step02, Step03, Step04, Step05 } =
-    scienza[version] || {};
+  
+
+
   useEffect(() => {
     $(document).ready(() => {
       if ($.scrollify) {
@@ -38,83 +43,18 @@ const ScienceNew = ({ version }) => {
       }
     });
   }, []);
-  return (
-    <section>
-      <div class="content">
-        <section class="scrolls active">
-          <div class="background"></div>
-          <div class="container">
-            <div class="image">
-              <img src="https://i.ibb.co/JHjh3jJ/slide1.jpg" alt="" />
-            </div>
-            <div class="items">
-              <h2>Scrollify is so slick.</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                maxime labore, esse repellat dolor dignissimos optio placeat
-                accusantium commodi at voluptas ut, a quisquam porro excepturi.
-              </p>
-              <button>Read More</button>
-            </div>
-          </div>
-        </section>
-        <section class="scrolls">
-          <div class="background"></div>
-          <div class="container">
-            <div class="image">
-              <img src="https://i.ibb.co/JHjh3jJ/slide1.jpg" alt="" />
-            </div>
-            <div class="items">
-              <h2>I like natural colors.</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                maxime labore, esse repellat dolor dignissimos optio placeat
-                accusantium commodi at voluptas ut, a quisquam porro excepturi.
-              </p>
-              <button>Read More</button>
-            </div>
-          </div>
-        </section>
-        <section class="scrolls">
-          <div class="background"></div>
-          <div class="container">
-            <div class="image">
-              <img src="https://i.ibb.co/JHjh3jJ/slide1.jpg" alt="" />
-            </div>
-            <div class="items">
-              <h2>End of the Page.</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                maxime labore, esse repellat dolor dignissimos optio placeat
-                accusantium commodi at voluptas ut, a quisquam porro excepturi.
-              </p>
-              <button>Read More</button>
-            </div>
-          </div>
-        </section>
-        <section class="scrolls">
-          <div class="background"></div>
-          <div class="container">
-            <div class="image">
-              <img src="https://i.ibb.co/JHjh3jJ/slide1.jpg" alt="" />
-            </div>
-            <div class="items">
-              <h2>It was a lie.</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                maxime labore, esse repellat dolor dignissimos optio placeat
-                accusantium commodi at voluptas ut, a quisquam porro excepturi.
-              </p>
-              <button>Read More</button>
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
-  );
+  
 };
 
-const Science = () => {
+
+
+  const Science = ({ version }) => {
+    const [isVisible, setIsVisible] = useState(false);
+    const { masterHead, Step01, Step02, Step03, Step04, Step05 } =
+      scienza[version] || {};
+
+  
+
   useEffect(() => {
     $(function () {
       "use strict";
@@ -125,7 +65,7 @@ const Science = () => {
         navigate: $(".js--navigate"),
         navigateItems: $(".js--navigate-items"),
         navigateLink: $(".js--navigate-link"),
-        firstTitle: $(".js--first-title"),
+        introTitle: $(".js--intro-title"),
         third: $(".js--third"),
         thirdTitle: $(".js--third-title"),
         thirdLeft: $(".js--third-left"),
@@ -149,7 +89,7 @@ const Science = () => {
       });
 
       setTimeout(() => {
-        elements.firstTitle.addClass("bounceInDown");
+        elements.introTitle.addClass("bounceInDown");
       }, 100);
 
       $.scrollify({
@@ -162,12 +102,12 @@ const Science = () => {
         before(index, sections) {
           const ref = sections[index].data("section-name");
 
-          if (ref === "first" || ref === "footer") {
+          if (ref === "intro" || ref === "footer") {
             elements.header.removeClass("is--active");
-            elements.firstTitle.addClass("bounceInDown");
+            elements.introTitle.addClass("bounceInDown");
           }
 
-          if (ref === "second") {
+          if (ref === "science") {
             setTimeout(function () {
               elements.sectionCard.addClass("flipInY");
             }, 100);
@@ -196,7 +136,7 @@ const Science = () => {
         after: function (index, sections) {
           var ref = sections[index].data("section-name");
 
-          if (ref !== "second") {
+          if (ref !== "science") {
             elements.sectionCard.removeClass("flipInY");
           }
 
@@ -210,9 +150,9 @@ const Science = () => {
             elements.third.addClass("is--inactive");
           }
 
-          if (ref !== "first" && ref !== "footer") {
+          if (ref !== "intro" && ref !== "footer") {
             elements.header.addClass("is--active");
-            elements.firstTitle.removeClass("bounceInDown");
+            elements.introTitle.removeClass("bounceInDown");
           }
         },
         afterRender() {},
@@ -220,43 +160,62 @@ const Science = () => {
     });
   }, []);
   return (
+   
     <main className="ScienceScrollAnimation">
-      <nav class="section-navigate js--navigate">
+       <div>     
+      <Headers
+              link={data[version].links}
+              version={version}
+              iconLink={{
+                cart: data[version].cartLink,
+                login: data[version].login,
+              }}
+            />
+     
+    </div>
+      
+      {/* <nav class="section-navigate js--navigate">
         <ul class="section-navigate__items js--navigate-items">
           <li class="section-navigate__item">
             <a
-              href="#first"
+              href="#intro"
               class="section-navigate__link js--navigate-link is--active"
             >
-              <span class="section-navigate__name">First</span>
+              <span class="section-navigate__name">intro</span>
             </a>
           </li>
           <li class="section-navigate__item">
-            <a href="#second" class="section-navigate__link js--navigate-link">
-              <span class="section-navigate__name">Second</span>
+            <a href="#science" class="section-navigate__link js--navigate-link">
+              <span class="section-navigate__name">Science</span>
             </a>
           </li>
           <li class="section-navigate__item">
-            <a href="#third" class="section-navigate__link js--navigate-link">
-              <span class="section-navigate__name">Third</span>
+            <a href="#understand-the-world" class="section-navigate__link js--navigate-link">
+              <span class="section-navigate__name">understand-the-world</span>
             </a>
           </li>
           <li class="section-navigate__item">
-            <a href="#fourth" class="section-navigate__link js--navigate-link">
-              <span class="section-navigate__name">Fourth</span>
+            <a href="#BlueZone" class="section-navigate__link js--navigate-link">
+              <span class="section-navigate__name">BlueZone</span>
             </a>
           </li>
           <li class="section-navigate__item">
-            <a href="#fifth" class="section-navigate__link js--navigate-link">
-              <span class="section-navigate__name">Fifth</span>
+            <a href="#farm-to-table" class="section-navigate__link js--navigate-link">
+              <span class="section-navigate__name">farm-to-table</span>
+            </a>
+          </li>
+          <li class="section-navigate__item">
+            <a href="#nature" class="section-navigate__link js--navigate-link">
+              <span class="section-navigate__name">nature</span>
             </a>
           </li>
         </ul>
-      </nav>
+        
+      </nav> */}
 
       <section
-        class="section__first is--scrolled js--scrollify"
-        data-section-name="first"
+        class="section__intro is--scrolled js--scrollify"
+        data-section-name="intro"
       >
         <div className="height100Vh">
           <video width="1920" height="auto" loop autoPlay muted>
@@ -268,41 +227,42 @@ const Science = () => {
         </div>
       </section>
       <section
-        class="section__second is--scrolled js--scrollify"
-        data-section-name="second"
+        class="section__science is--scrolled js--scrollify"
+        data-section-name="science"
       >
         <ScienceStep1 />
       </section>
 
       <section
-        class="section__third is--scrolled js--scrollify js--third"
-        data-section-name="third"
+        class="section__understand-the-world is--scrolled js--scrollify js--third"
+        data-section-name="understand-the-world"
       >
         <ScienceStep2 />
       </section>
 
       <section
-        class="section__fourth is--scrolled js--scrollify"
-        data-section-name="fourth"
+        class="section__BlueZone is--scrolled js--scrollify"
+        data-section-name="BlueZone"
       >
         <ScienceStep3 />
       </section>
 
       <section
-        class="section__fifth is--scrolled js--scrollify"
-        data-section-name="fifth"
+        class="section__farm-to-table is--scrolled js--scrollify"
+        data-section-name="farm-to-table"
       >
         <ScienceStep4 />
       </section>
       <section
-        class="section__six is--scrolled js--scrollify"
-        data-section-name="six"
+        class="section__nature is--scrolled js--scrollify"
+        data-section-name="nature"
       >
         <ScienceStep5 />
       </section>
 
       <footer class="footer js--footer" data-section-name="footer">
-        {/* <Footer data={scienza[version].footer} /> */}
+      <Footer data={scienza[version].footer} />
+      
        
       </footer>
     </main>

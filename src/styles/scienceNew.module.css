@@ -10,6 +10,8 @@
   scroll-snap-type: y mandatory;
 }
 
+
+
 .ScrollArea {
   scroll-snap-align: start;
 }
