@@ -251,6 +251,7 @@
         background-image: url("/images/Science-page-Step-2.png");
     background-size: cover;
     background-repeat: no-repeat;
+    
       }
       .ScienceScrollAnimation .section__third-container {
         display: flex;
@@ -303,6 +304,7 @@
     background-image: url("/images/Nature-meet-pharma.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: right 40% bottom 45% !important;   
       }
       .ScienceScrollAnimation button{
         border: unset;
@@ -327,4 +329,28 @@
   }
   .ScienceScrollAnimation a {    
     text-decoration: none;
+}
+
+.ScienceScrollAnimation video {
+  position: relative;
+  bottom: 120px;
+}
+
+@media (max-width:575px){
+  .ScienceScrollAnimation .section__BlueZone {
+    background-position: right 40% bottom 45% !important;   
+
+  }
+  .style_RowFlex__S6Tgi h2 {
+   
+    height: 51px;
+}
+.ScienceScrollAnimation .section__nature { 
+background-position: right 40% bottom 45% !important;   
+}
+.ScienceScrollAnimation .section__understand-the-world {
+ 
+background-position: right 55% bottom 45% !important;
+}
+
 }

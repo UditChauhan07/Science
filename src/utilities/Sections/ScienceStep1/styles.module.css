@@ -5,7 +5,8 @@
     background-repeat: no-repeat;
     width: 100%;   
     position: relative;
-    animation-name: zoomOut;   
+    animation-name: zoomOut;
+    
    
 }
 @keyframes zoomOut {
@@ -303,6 +304,11 @@ font-weight: 900;
     .RowFlex h3 {
         font-size: 20px;
     }
+    .height100vh{      
+       
+        background-position: right 50% bottom 45% !important;   
+       
+    }
 
 }
 
@@ -312,6 +318,7 @@ font-weight: 900;
              max-width: 90%;
        
     }
+
     
 
 }

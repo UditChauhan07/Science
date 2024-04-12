@@ -538,6 +538,6 @@ ul.fireflies {
 }
 @media (max-width: 475px) {
   .container {
-    max-width: 275px;
+    max-width: 85%;
   }
 }
