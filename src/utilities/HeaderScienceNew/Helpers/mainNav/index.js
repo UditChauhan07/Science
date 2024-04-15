@@ -90,6 +90,7 @@ const MainNav = ({ navMenuLinks, version, iconLink }) => {
                         src={"/Bruno-White.webp"}
                         width={180}
                         height={30}
+                        className={styles.LogoSize}
                       />
                     ) : (
                       <Image

@@ -260,13 +260,18 @@ font-weight: 900;
   }
 
   .RowFlex h1 {
-    font-size: 60px;
+    font-size: 50px;
     letter-spacing: normal;
     line-height: 65px;
   }
   .RowFlex h3 {
     font-size: 20px;
   }
+  .hiddenParagraph h3 {
+    color: #000;
+    font-size: 30px;
+   
+}
 }
 @media (max-width: 475px) {
   .container {

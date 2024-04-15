@@ -541,6 +541,11 @@ ul.fireflies {
   .W80 p {
     width: 100%;
   }
+  .hiddenParagraph h3 {
+    color: #000;
+    font-size: 30px;
+   
+}
 }
 @media (max-width: 475px) {
   .container {

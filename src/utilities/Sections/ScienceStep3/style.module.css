@@ -306,6 +306,11 @@ background-clip: text;
              max-width: 900px;
        
     }
+    .W70 .ContentBox h3 {
+        
+        font-size: 80px;
+       
+    }
 
 }
 @media  (max-width: 768px)
@@ -356,6 +361,23 @@ background-clip: text;
     }
     .RowFlex h3 {
         font-size: 20px;
+    }
+    .W70 .ContentBox h3 {       
+        font-size: 35px;        
+        line-height: 114px;    
+    
+    }
+    .RowFlex h2 {
+        font-size: 40px;
+        bottom: 15px;
+        line-height: 112px;
+        height: 80px;
+    }
+    
+    .hiddenParagraph h3 {
+        color: #000;
+        font-size: 30px;
+       
     }
 
 }

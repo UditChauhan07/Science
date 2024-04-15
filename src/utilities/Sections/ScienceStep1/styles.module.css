@@ -313,6 +313,11 @@ font-weight: 900;
         background-position: right 50% bottom 45% !important;   
        
     }
+    .hiddenParagraph h3 {
+        color: #000;
+        font-size: 30px;
+       
+    }
 
 }
 

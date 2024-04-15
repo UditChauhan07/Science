@@ -82,6 +82,10 @@
 .MobileNavContainer{
   display: none;
 }
+.LogoSize{
+  width: 180px;
+
+}
 @media screen and (max-width: 875px) {
   .MobileNavContainer{
     display: block;
