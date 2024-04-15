@@ -336,6 +336,14 @@
   bottom: 120px;
 }
 
+@media (max-width:1599.98px){
+.ScienceScrollAnimation video {
+  position: relative;
+  bottom: 100px;
+  width: -webkit-fill-available;
+}
+}
+
 @media (max-width:575px){
   .ScienceScrollAnimation .section__BlueZone {
     background-position: right 40% bottom 45% !important;   

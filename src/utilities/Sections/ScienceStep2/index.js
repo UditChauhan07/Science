@@ -70,47 +70,49 @@ const Index = () => {
           >
             <div className={styles.container}>
               <h3>Understand the world</h3>
-              <p>
-                Polyphenols are compounds in many plant-based foods, such as
-                fruits, vegetables, tea, and wine. They are antioxidants, which
-                means they can help protect our cells from damage caused by free
-                radicals. Some polyphenols have anti-inflammatory and
-                anti-cancer properties. A diet rich in polyphenols has various
-                health benefits, including reducing the risk of heart disease,
-                diabetes, and certain cancers. 
-              </p>
+              <div className={styles.InneerDiscription}>
+                <p>
+                  Polyphenols are compounds in many plant-based foods, such as
+                  fruits, vegetables, tea, and wine. They are antioxidants,
+                  which means they can help protect our cells from damage caused
+                  by free radicals. Some polyphenols have anti-inflammatory and
+                  anti-cancer properties. A diet rich in polyphenols has various
+                  health benefits, including reducing the risk of heart disease,
+                  diabetes, and certain cancers.
+                </p>
 
-              <p>
-              Until recently, these
-                antioxidants, when included in supplements, remained mostly
-                unavailable to our bodies, meaning that no matter how much of a
-                supplement containing polyphenols we consume, very little of it
-                is absorbed. The low bioavailability problem is vexing. Our
-                bodies block botanical compounds like polyphenols in two ways:
-                low water solubility and limited intestinal absorption. Creating
-                optimal bio absorption without altering the natural actives
-                found in plants is the elusive target. As a pharma, we are
-                skilled at creating molecular solutions to health problems, but
-                our mission is different here. 
-              </p>
-              <p>
-              The goal is to deliver 100% of a
-                plant&apos;s food-grade benefits into your body without altering the
-                botanical itself. In other words, let Nature do what she does
-                best. To do this, natural derivatives must balance
-                hydrophilicity (the ability to dissolve in gastrointestinal
-                fluids) and lipophilicity (the ability to cross lipid
-                membranes). Complicating this mission is that all plant-based
-                polyphenols carry a different pharmacokinetic profile, so Bruno
-                MD utilizes a new technology called Phytosome that optimizes the
-                bioavailability of each botanical. Hence, our bodies absorb them
-                in the best possible way. With Phytosome Technology, Bruno MD
-                supplements deliver a higher percentage (up to 3000% more) of
-                highly beneficial polyphenols into the bloodstream. Importantly,
-                Phytosome Technology does this without changing the natural
-                ingredients themselves or relying on drugs, making it safe and
-                tolerated by our bodies over time.
-              </p>
+                <p>
+                  Until recently, these antioxidants, when included in
+                  supplements, remained mostly unavailable to our bodies,
+                  meaning that no matter how much of a supplement containing
+                  polyphenols we consume, very little of it is absorbed. The low
+                  bioavailability problem is vexing. Our bodies block botanical
+                  compounds like polyphenols in two ways: low water solubility
+                  and limited intestinal absorption. Creating optimal bio
+                  absorption without altering the natural actives found in
+                  plants is the elusive target. As a pharma, we are skilled at
+                  creating molecular solutions to health problems, but our
+                  mission is different here.
+                </p>
+                <p>
+                  The goal is to deliver 100% of a plant&apos;s food-grade
+                  benefits into your body without altering the botanical itself.
+                  In other words, let Nature do what she does best. To do this,
+                  natural derivatives must balance hydrophilicity (the ability
+                  to dissolve in gastrointestinal fluids) and lipophilicity (the
+                  ability to cross lipid membranes). Complicating this mission
+                  is that all plant-based polyphenols carry a different
+                  pharmacokinetic profile, so Bruno MD utilizes a new technology
+                  called Phytosome that optimizes the bioavailability of each
+                  botanical. Hence, our bodies absorb them in the best possible
+                  way. With Phytosome Technology, Bruno MD supplements deliver a
+                  higher percentage (up to 3000% more) of highly beneficial
+                  polyphenols into the bloodstream. Importantly, Phytosome
+                  Technology does this without changing the natural ingredients
+                  themselves or relying on drugs, making it safe and tolerated
+                  by our bodies over time.
+                </p>
+              </div>
             </div>
             <span onClick={toggleVisibility}>X</span>
           </div>

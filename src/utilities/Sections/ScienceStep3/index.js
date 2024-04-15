@@ -36,12 +36,7 @@ const Index = () => {
                   Many pharmacological companies are scaled international
                   conglomerates. The names of these companies are familiar and,
                   unfortunately, are often known for being as impersonal as they
-                  are innovative.
-                  <br></br>
-                  <br></br>
-                  Bruno MD, an Italian company based in Rome, is a family-owned
-                  operation that allows the company to innovate from a different
-                  perspective.
+                  are innovative.                 
                 </p>
               </div>
             </ScrollAnimation>
@@ -66,6 +61,7 @@ const Index = () => {
           >
             <div className={styles.container}>
               <h3>BLUE ZONE, Longevity</h3>
+              <div className={styles.InneerDiscription}>
               <p>
                 Many pharmacological companies are scaled international
                 conglomerates. The names of these companies are familiar and,
@@ -103,6 +99,7 @@ const Index = () => {
                 and diet of Mediterranean Blue Zones to reduce the need for
                 pharmaceutical intervention in the first place.
               </p>
+              </div>
             </div>
             <span onClick={toggleVisibility}>X</span>
           </div>

@@ -125,6 +125,7 @@
   /* max-height: 300px; */
   overflow-y: hidden;
   /* max-height: 500px; */
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   
 }
 .hiddenParagraph h3{
@@ -235,6 +236,10 @@ font-weight: 900;
 
 /* fade up end */
 
+.InneerDiscription{
+  height: 350px;
+  overflow: auto;
+}
 
 @media  (max-width: 1599.98px)
 {

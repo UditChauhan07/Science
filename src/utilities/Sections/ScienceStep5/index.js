@@ -53,26 +53,27 @@ const Index = () => {
           >
             <div className={styles.container}>
               <h3> Nature Meet, Pharma </h3>
-              <p>
-                When a company makes a claim, it should be transparent and
-                verifiable. Because we are both a pharmacological company and a
-                nutritional supplement company, Bruno MD applies the same
-                principled methods for safety, provenance, and effectiveness on
-                all of our products, whether they are molecules we formulate or
-                ones we source from Nature. We substantiate all advertised
-                health benefits and claims. 
-              </p>
+              <div className={styles.InneerDiscription}>
+                <p>
+                  When a company makes a claim, it should be transparent and
+                  verifiable. Because we are both a pharmacological company and
+                  a nutritional supplement company, Bruno MD applies the same
+                  principled methods for safety, provenance, and effectiveness
+                  on all of our products, whether they are molecules we
+                  formulate or ones we source from Nature. We substantiate all
+                  advertised health benefits and claims.
+                </p>
 
-              <p>
-              All clinical trials on our
-                ingredients are randomized, double-blind, placebo-controlled,
-                and published. In addition, all Bruno MD dietary supplements
-                undergo the same rigorous manufacturing and internal regulatory
-                processes as our pharmaceutical products. Finally, the efficacy
-                of the actives in all of our pharmacological or botanical
-                products delivered with Phytosome Technology is guaranteed.
-              </p>
-              
+                <p>
+                  All clinical trials on our ingredients are randomized,
+                  double-blind, placebo-controlled, and published. In addition,
+                  all Bruno MD dietary supplements undergo the same rigorous
+                  manufacturing and internal regulatory processes as our
+                  pharmaceutical products. Finally, the efficacy of the actives
+                  in all of our pharmacological or botanical products delivered
+                  with Phytosome Technology is guaranteed.
+                </p>
+              </div>
             </div>
             <span onClick={toggleVisibility}>X</span>
           </div>
