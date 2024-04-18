@@ -171,7 +171,10 @@
   /* max-height: 500px; */
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   border-radius: 20px 20px 0px 0px;
-  
+  max-width: 1440px;
+  left: 0;
+  right: 0;    
+  margin:auto;  
 }
 .hiddenParagraph h3{
   color: #000;

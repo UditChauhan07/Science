@@ -65,7 +65,15 @@ const ScienceNew = ({ version }) => {
         }
       };
 
+      
+      const autoToggleMute = () => {
+        const video = videoRef.current;
+        video.play();
+      //video.muted = !video.muted;
+      };
+
   useEffect(() => {
+    autoToggleMute();
     $(function () {
       "use strict";
       const elements = {
