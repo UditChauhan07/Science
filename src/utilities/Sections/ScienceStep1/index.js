@@ -66,6 +66,7 @@ const Index = () => {
         {isVisible ? (
           <span></span>
         ) : (
+          
           <div
             className={`${styles.hiddenParagraph} ${styles.animated} ${styles.fadeInUp} ${styles.animatedFadeInUp}`}
           >

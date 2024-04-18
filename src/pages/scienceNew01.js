@@ -79,7 +79,7 @@ const Science = ({ version }) => {
               />
             </video>
             <button className="MuteBtn" onClick={handleToggleMute}>
-              {isMute ? "Unmute" : "Mute"}
+            {isMute ? (<img src="/images/unmute-icon.png"/>) : (<img src="/images/mute-icon.png"/>)}   
             </button>
           </div>
         </section>

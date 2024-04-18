@@ -389,6 +389,7 @@ background-position: right 55% bottom 45% !important;
     border: 1px solid #868686;
     color: #fff;
     border-radius: 10px 0px 0px 10px;
-    bottom: 15%;
+    top: 15%;
+    padding: 5px 12px;
 }
 

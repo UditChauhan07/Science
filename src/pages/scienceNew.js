@@ -235,8 +235,9 @@ const ScienceNew = ({ version }) => {
             />
           </video>
           <button className="MuteBtn" onClick={handleToggleMute}>       
-        {isMute ? 'Unmute' : 'Mute'}
-        {/* {isMute ? (<img scr="https://images.unsplash.com/photo-1712857329031-eecb5980eec7?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/> ): ( <img scr="https://f.hubspotusercontent40.net/hub/19647191/hubfs/images.jpg?width=108&height=108"/>)} */}
+        {/* {isMute ? 'Unmute' : 'Mute'} */}
+         {isMute ? (<img src="/images/unmute-icon.png"/>) : (<img src="/images/mute-icon.png"/>)}       
+       
       </button>
           
      
