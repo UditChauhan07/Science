@@ -14,6 +14,11 @@
   max-width: 1380px;
   width: 100%;
 }
+.hiddenParagraph .container{   
+  background-image: url("/images/DNA-icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .RowFlex {
   display: flex;
   text-align: start;
@@ -103,10 +108,8 @@
   margin: 15px 0px;
   font-family: var(--bmd-font-Secondary);
   cursor: pointer;
-  border-radius: 10px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
-  background-image: url("/images/DNA-icon.png");
-  background-size: cover; 
+ 
+  
 }
 
 
@@ -126,6 +129,7 @@
   overflow-y: hidden;
   /* max-height: 500px; */
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border-radius: 20px 20px 0px 0px;
   
 }
 .hiddenParagraph h3{

@@ -377,3 +377,18 @@ background-position: right 55% bottom 45% !important;
 }
 
 }
+
+.ScienceScrollAnimation button.MuteBtn {  
+  cursor: pointer;
+  position: absolute; 
+  height: 40px;
+    width: 60px;
+    z-index: 1;
+    right: 0;
+    background: #000;
+    border: 1px solid #868686;
+    color: #fff;
+    border-radius: 10px 0px 0px 10px;
+    bottom: 15%;
+}
+

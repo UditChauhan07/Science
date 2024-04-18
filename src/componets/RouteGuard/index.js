@@ -172,6 +172,7 @@ function RouteGuard({ children, version }) {
         "/pages/blurex",
         "/pages/blurex-wo-script",
         "/scienceNew",
+        "/scienceNew01",
       ];
     // console.log(publicPaths.includes(url), { publicPaths, url });
     if (!publicPaths.length) {

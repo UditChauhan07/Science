@@ -53,7 +53,17 @@ const ScienceNew = ({ version }) => {
     const { masterHead, Step01, Step02, Step03, Step04, Step05 } =
       scienza[version] || {};
 
-  
+      const videoRef = useRef(null);
+      const [isMute, setMute] = useState(false);
+      
+
+      const handleToggleMute = () => {
+        const video = videoRef.current;
+        if (video) {
+          video.muted = !video.muted;
+          setMute(!isMute)
+        }
+      };
 
   useEffect(() => {
     $(function () {
@@ -218,13 +228,22 @@ const ScienceNew = ({ version }) => {
         data-section-name="intro"
       >
         <div className="height100Vh">
-          <video width="1920" height="auto" loop autoPlay muted>
+          <video width="1920" height="auto" ref={videoRef} loop autoPlay muted>
             <source
               src="https://cdn.shopify.com/videos/c/o/v/b45c94600c184f59a34a27c3f428ca33.mp4"
               type="video/mp4"
             />
           </video>
-        </div>
+          <button className="MuteBtn" onClick={handleToggleMute}>       
+        {isMute ? 'Unmute' : 'Mute'}
+        {/* {isMute ? (<img scr="https://images.unsplash.com/photo-1712857329031-eecb5980eec7?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/> ): ( <img scr="https://f.hubspotusercontent40.net/hub/19647191/hubfs/images.jpg?width=108&height=108"/>)} */}
+      </button>
+          
+     
+      
+    </div>
+         
+       
       </section>
       <section
         class="section__science is--scrolled js--scrollify"
