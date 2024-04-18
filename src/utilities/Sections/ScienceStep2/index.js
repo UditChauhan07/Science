@@ -49,7 +49,7 @@ const Index = () => {
                 </p>
               </div>
             </ScrollAnimation>
-            <ScrollAnimation delay={2800} animateIn="fadeIn">
+            <ScrollAnimation delay={2800} animateIn="flipInX">
               <div>
                 <button
                   onClick={toggleVisibility}

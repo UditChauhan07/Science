@@ -26,13 +26,11 @@ const Index = () => {
                 <p>
                   When a company makes a claim, it should be transparent and
                   verifiable. Because we are both a pharmacological company and
-                  a nutritional supplement company, Bruno MD applies the same
-                  principled methods for safety, provenance, and effectiveness
-                  on all of our products...
+                  a nutritional supplement company
                 </p>
               </div>
             </ScrollAnimation>
-            <ScrollAnimation delay={5000} animateIn="fadeIn">
+            <ScrollAnimation delay={5000} animateIn="flipInX">
               <div>
                 <button
                   onClick={toggleVisibility}

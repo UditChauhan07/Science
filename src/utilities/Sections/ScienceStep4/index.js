@@ -27,12 +27,11 @@ const Index = () => {
                   If you take supplements, you should be aware that the
                   ingredients you consume, such as Vitamin C or E, are often
                   produced in a lab and not harvested from natural sources.
-                  While these compounds appear identical to their naturally
-                  derived counterparts on a molecular level...
+                
                 </p>
               </div>
             </ScrollAnimation>
-            <ScrollAnimation delay={2800} animateIn="fadeIn">
+            <ScrollAnimation delay={2800} animateIn="flipInX">
               <div>
                 <button
                   onClick={toggleVisibility}

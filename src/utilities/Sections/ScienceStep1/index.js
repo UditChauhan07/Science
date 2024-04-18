@@ -44,11 +44,11 @@ const Index = () => {
                   Bruno MD is committed to furthering our understanding of the
                   power of natural substances to improve human health and
                   longevity. This goal is a moving target. One not easily
-                  achieved. Nature is not always willing to show us her hand.
+                  achieved.
                 </p>
               </div>
             </ScrollAnimation>
-            <ScrollAnimation delay={3800} animateIn="fadeIn">
+            <ScrollAnimation delay={3800} animateIn="flipInX">
               <div>
                 <button
                   onClick={toggleVisibility}
