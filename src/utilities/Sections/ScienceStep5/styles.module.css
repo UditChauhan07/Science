@@ -18,6 +18,7 @@
   background-image: url("/images/DNA-icon.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: right 0% bottom 35%;
 }
 .RowFlex {
   display: flex;
@@ -138,14 +139,17 @@
 }
 .hiddenParagraph h3{
   color: #000;
-  font-size: 60px;
+  font-size: 52px;
   font-family: var(--bmd-font-Secondary);
   
 }
 .hiddenParagraph p{
   color: #000;
   font-family: var(--bmd-font-Secondary);
-  font-size: 18px;
+  font-size: 16px;
+  text-align: justify;
+  padding-bottom: 15px;
+  line-height: 24px;
 }
 
 .hiddenParagraph span{
@@ -189,6 +193,36 @@ font-weight: 900;
       opacity: 1
   }
 }
+@keyframes flipInX {
+  0% {
+      transform: perspective(800px) rotateX(-90deg);
+      animation-timing-function: ease-in;
+      opacity: 0
+  }
+
+  40% {
+      transform: perspective(800px) rotateX(-40deg);
+      animation-timing-function: ease-in
+  }
+
+  60% {
+      transform: perspective(800px) rotateX(-20deg);
+      opacity: 1
+  }
+
+  80% {
+      transform: perspective(800px) rotateX(-10deg)
+  }
+
+  to {
+      transform: perspective(800px)
+  }
+}
+
+.flipInX {
+  backface-visibility: visible!important;
+  animation-name: flipInX
+}
 
 .animated {
   animation-duration: 1s;
@@ -209,15 +243,8 @@ font-weight: 900;
 
 /* fade up end */
 
-.InneerDiscription{
-  height: 350px;
-  overflow: auto;
-}
 
-.W70 {  
-  top: 5%;
-  position: relative;
-}
+
 
 @media (max-width: 1599.98px) {
   .container {
@@ -245,15 +272,19 @@ font-weight: 900;
     -webkit-line-clamp: 2;
     overflow: hidden;
   }
+  .InneerDiscription{
+    height: 350px;
+    overflow: auto;
+  }
 }
 @media (max-width: 1100px) {
   .container {
-    max-width: 900px;
+    max-width: 90%;
   }
 }
 @media (max-width: 768px) {
   .container {
-    max-width: 650px;
+    max-width: 90%;
   }
   .W70 {
     padding: 10px;
@@ -267,7 +298,7 @@ font-weight: 900;
 }
 @media (max-width: 575px) {
   .container {
-    max-width: 375px;
+    max-width: 90%;
   }
   .W80 {
     width: 100%;
@@ -294,7 +325,7 @@ font-weight: 900;
 }
 @media (max-width: 475px) {
   .container {
-    max-width: 285px;
+    max-width: 90%;
   }
 }
 

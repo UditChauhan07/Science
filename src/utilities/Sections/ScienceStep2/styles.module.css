@@ -17,6 +17,7 @@
   background-image: url("/images/DNA-icon.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: right 0% bottom 35%;
 }
 .RowFlex {
   display: flex;
@@ -40,9 +41,10 @@
   -webkit-text-fill-color: transparent;
 }
 .hiddenParagraph p{
-  padding-bottom: 15px;
-  line-height: 24px;
-
+  color: #000;
+  font-family: var(--bmd-font-Secondary);
+  font-size: 16px;
+  text-align: justify;
 }
 .hiddenParagraph h3{
   padding-bottom: 20px;
@@ -178,14 +180,17 @@
 }
 .hiddenParagraph h3{
   color: #000;
-  font-size: 60px;
+  font-size: 52px;
   font-family: var(--bmd-font-Secondary);
   
 }
 .hiddenParagraph p{
   color: #000;
   font-family: var(--bmd-font-Secondary);
-  font-size: 18px;
+  font-size: 16px;
+  text-align: justify;
+  padding-bottom: 15px;
+  line-height: 24px;
 }
 
 .hiddenParagraph span{
@@ -228,6 +233,37 @@ font-weight: 900;
       transform: translate3d(0,0,0);
       opacity: 1
   }
+}
+
+@keyframes flipInX {
+  0% {
+      transform: perspective(800px) rotateX(-90deg);
+      animation-timing-function: ease-in;
+      opacity: 0
+  }
+
+  40% {
+      transform: perspective(800px) rotateX(-40deg);
+      animation-timing-function: ease-in
+  }
+
+  60% {
+      transform: perspective(800px) rotateX(-20deg);
+      opacity: 1
+  }
+
+  80% {
+      transform: perspective(800px) rotateX(-10deg)
+  }
+
+  to {
+      transform: perspective(800px)
+  }
+}
+
+.flipInX {
+  backface-visibility: visible!important;
+  animation-name: flipInX
 }
 
 .animated {
@@ -475,14 +511,7 @@ ul.fireflies {
 
 /* step2 end */
 
-.InneerDiscription{
-  height: 350px;
-  overflow: auto;
-}
-.W70 {  
-  top: 5%;
-  position: relative;
-}
+
 
 @media (max-width: 1599.98px) {
   .container {
@@ -508,6 +537,11 @@ ul.fireflies {
     overflow: hidden;
     margin-top: 0;
   }
+  .InneerDiscription{
+    height: 350px;
+    overflow: auto;
+  }
+  
 }
 @media (max-width: 1100px) {
   .container {
@@ -520,7 +554,7 @@ ul.fireflies {
 }
 @media (max-width: 768px) {
   .container {
-    max-width: 650px;
+    max-width: 90%;
   }
   .W70 {
     width: 100%;
@@ -534,7 +568,7 @@ ul.fireflies {
 }
 @media (max-width: 575px) {
   .container {
-    max-width: 375px;
+    max-width: 90%;
   }
   .W80 {
     width: 100%;
@@ -564,6 +598,6 @@ ul.fireflies {
 }
 @media (max-width: 475px) {
   .container {
-    max-width: 85%;
+    max-width: 90%;
   }
 }

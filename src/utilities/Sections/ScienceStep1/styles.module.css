@@ -6,9 +6,13 @@
     width: 100%;   
     position: relative;
     animation-name: zoomOut;
-    
+   
    
 }
+
+
+
+
 @keyframes zoomOut {
     0% {
         opacity: 1
@@ -23,13 +27,6 @@
         opacity: 0
     }
 }
-
-
-.hiddenParagraph p{
-    padding-bottom: 15px;
-    line-height: 24px;
-
-  }
   .hiddenParagraph h3{
     padding-bottom: 20px;
 
@@ -46,6 +43,7 @@
     background-image: url("/images/DNA-icon.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: right 0% bottom 35%;
 }
 
 .RowFlex{
@@ -153,14 +151,17 @@
 }
 .hiddenParagraph h3{
     color: #000;
-    font-size: 60px;
+    font-size: 52px;
     font-family: var(--bmd-font-Secondary);
     
 }
 .hiddenParagraph p{
     color: #000;
     font-family: var(--bmd-font-Secondary);
-    font-size: 18px;
+    font-size: 16px;
+    text-align: justify;
+    padding-bottom: 15px;
+    line-height: 24px;
 }
 
 .hiddenParagraph span{
@@ -208,6 +209,42 @@ font-weight: 900;
     }
 }
 
+@keyframes flipInX {
+    0% {
+        transform: perspective(800px) rotateX(-90deg);
+        animation-timing-function: ease-in;
+        opacity: 0
+    }   
+
+    40% {
+        transform: perspective(800px) rotateX(-15deg);
+        animation-timing-function: ease-in
+    }
+
+    60% {
+        transform: perspective(800px) rotateX(-8deg);
+        opacity: 1
+    }
+
+    80% {
+        transform: perspective(800px) rotateX(-5deg)
+    }
+
+    to {
+        transform: perspective(800px)
+    }
+}
+
+.flipInX {
+    backface-visibility: visible!important;
+    animation-name: flipInX
+}
+
+
+
+
+
+
 .animated {
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -226,15 +263,8 @@ font-weight: 900;
 }
 
 /* fade up end */
-.InneerDiscription{
-    height: 350px;
-    overflow: auto;
-}
- .W70 {  
-    top: 5%;
-    position: relative;
-  }  
-  
+
+
 
 @media (max-width: 1599.98px)
 {
@@ -270,6 +300,10 @@ font-weight: 900;
         color: #000;
         font-family: var(--bmd-font-Secondary);
         font-size: 14px;
+    }
+    .InneerDiscription{
+        height: 350px;
+        overflow: auto;
     }
 
 }

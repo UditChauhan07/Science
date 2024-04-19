@@ -66,7 +66,7 @@ const Index = () => {
           <span></span>
         ) : (
           <div
-            className={`${styles.hiddenParagraph} ${styles.animated} ${styles.fadeInUp} ${styles.animatedFadeInUp}`}
+            className={`${styles.hiddenParagraph} ${styles.animated} ${styles.flipInX} `}
           >
             <div className={styles.container}>
               <h3>Understand the world</h3>

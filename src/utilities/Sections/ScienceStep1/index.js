@@ -19,7 +19,7 @@ const Index = () => {
 
   return (
     <div
-      className={styles.height100vh}
+      className={styles.height100vh }
       onMouseMove={handleMouseMove}
       style={{
         backgroundPosition: `${backgroundPosition.x}px ${backgroundPosition.y}px`,
@@ -68,7 +68,7 @@ const Index = () => {
         ) : (
           
           <div
-            className={`${styles.hiddenParagraph} ${styles.animated} ${styles.fadeInUp} ${styles.animatedFadeInUp}`}
+            className={`${styles.hiddenParagraph} ${styles.animated} ${styles.flipInX}`}
           >
             <div className={styles.container}>
               <h3>Science, A human endeavor</h3>
