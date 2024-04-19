@@ -163,7 +163,7 @@
     text-align: justify;
     padding-bottom: 15px;
     line-height: 24px;
-    padding: 0 10px;
+    padding: 0 15px 10px 15px;
 }
 
 .hiddenParagraph span{
@@ -219,12 +219,12 @@ font-weight: 900;
     }   
 
     40% {
-        transform: perspective(800px) rotateX(0deg);
+        transform: perspective(800px) rotateX(-0deg);
         animation-timing-function: ease-in
     }
 
     60% {
-        transform: perspective(800px) rotateX(20deg);
+        transform: perspective(800px) rotateX(-0deg);
         opacity: 1
     }
 
