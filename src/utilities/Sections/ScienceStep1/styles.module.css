@@ -219,17 +219,17 @@ font-weight: 900;
     }   
 
     40% {
-        transform: perspective(800px) rotateX(-15deg);
+        transform: perspective(800px) rotateX(0deg);
         animation-timing-function: ease-in
     }
 
     60% {
-        transform: perspective(800px) rotateX(-8deg);
+        transform: perspective(800px) rotateX(20deg);
         opacity: 1
     }
 
     80% {
-        transform: perspective(800px) rotateX(-5deg)
+        transform: perspective(800px) rotateX(0deg)
     }
 
     to {
