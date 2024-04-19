@@ -52,7 +52,7 @@ const Index = () => {
           >
             <div className={styles.container}>
               <h3>Farm to Table</h3>
-              <div className={styles.InneerDiscription}>
+              <div id="ScrollRight" className={styles.InneerDiscription}>
                 <p>
                   If you take supplements, you should be aware that the
                   ingredients you consume, such as Vitamin C or E, are often

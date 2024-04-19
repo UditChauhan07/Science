@@ -141,6 +141,7 @@
   color: #000;
   font-size: 52px;
   font-family: var(--bmd-font-Secondary);
+  padding: 0 10px;
   
 }
 .hiddenParagraph p{
@@ -150,6 +151,7 @@
   text-align: justify;
   padding-bottom: 15px;
   line-height: 24px;
+  padding: 0 10px;
 }
 
 .hiddenParagraph span{

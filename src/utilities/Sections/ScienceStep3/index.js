@@ -61,7 +61,7 @@ const Index = () => {
           >
             <div className={styles.container}>
               <h3>BLUE ZONE, Longevity</h3>
-              <div className={styles.InneerDiscription}>
+              <div id="ScrollRight" className={styles.InneerDiscription}>
               <p>
                 Many pharmacological companies are scaled international
                 conglomerates. The names of these companies are familiar and,

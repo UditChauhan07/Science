@@ -72,7 +72,7 @@ const Index = () => {
           >
             <div className={styles.container}>
               <h3>Science, A human endeavor</h3>
-              <div className={styles.InneerDiscription}>
+              <div id="ScrollRight" className={styles.InneerDiscription}>
                 <p>
                   Bruno MD is committed to furthering our understanding of the
                   power of natural substances to improve human health and

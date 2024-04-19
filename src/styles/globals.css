@@ -397,3 +397,17 @@ background-position: right 55% bottom 45% !important;
     padding: 5px 12px;
 }
 
+#ScrollRight::-webkit-scrollbar {
+  background-color: #f5f5f5;
+  width: 4px;
+}
+#ScrollRight::-webkit-scrollbar-thumb {
+  background-color: #434c4f;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px #0000004d;
+}
+#ScrollRight::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px #0000004d;
+}

@@ -51,7 +51,7 @@ const Index = () => {
           >
             <div className={styles.container}>
               <h3> Nature Meet, Pharma </h3>
-              <div className={styles.InneerDiscription}>
+              <div id="ScrollRight" className={styles.InneerDiscription}>
                 <p>
                   When a company makes a claim, it should be transparent and
                   verifiable. Because we are both a pharmacological company and

@@ -66,11 +66,11 @@ const Index = () => {
           <span></span>
         ) : (
           <div
-            className={`${styles.hiddenParagraph} ${styles.animated} ${styles.flipInX} `}
+            className={`${styles.hiddenParagraph} ${styles.animated} ${styles.flipInX}`}
           >
             <div className={styles.container}>
               <h3>Understand the world</h3>
-              <div className={styles.InneerDiscription}>
+              <div id="ScrollRight" className={styles.InneerDiscription}>
                 <p>
                   Polyphenols are compounds in many plant-based foods, such as
                   fruits, vegetables, tea, and wine. They are antioxidants,

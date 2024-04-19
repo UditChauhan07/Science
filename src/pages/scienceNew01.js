@@ -10,6 +10,7 @@ import SEO from "../../json/SEO.json";
 import MasterHeadImg from "@/utilities/MasterHeadImg";
 import Headers from "@/utilities/HeaderScienceNew";
 import data from "../../json/layout.json";
+import ScrollToTop from "@/utilities/ScrollToTop";
 
 import Footer from "@/utilities/Footer/";
 
@@ -78,9 +79,9 @@ const Science = ({ version }) => {
                 type="video/mp4"
               />
             </video>
-            <button className="MuteBtn" onClick={handleToggleMute}>
+            {/* <button className="MuteBtn" onClick={handleToggleMute}>
             {isMute ? (<img src="/images/unmute-icon.png"/>) : (<img src="/images/mute-icon.png"/>)}   
-            </button>
+            </button> */}
           </div>
         </section>
         <section class="section__science  ">
@@ -105,6 +106,9 @@ const Science = ({ version }) => {
         <footer class="footer js--footer" data-section-name="footer">
           <Footer data={scienza[version].footer} />
         </footer>
+        
+        <ScrollToTop></ScrollToTop>
+
       </main>
     </div>
   );

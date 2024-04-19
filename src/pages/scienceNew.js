@@ -242,11 +242,11 @@ const ScienceNew = ({ version }) => {
               type="video/mp4"
             />
           </video>
-          <button className="MuteBtn" onClick={handleToggleMute}>       
-        {/* {isMute ? 'Unmute' : 'Mute'} */}
+          {/* <button className="MuteBtn" onClick={handleToggleMute}>       
+       
          {isMute ? (<img src="/images/unmute-icon.png"/>) : (<img src="/images/mute-icon.png"/>)}       
        
-      </button>
+      </button> */}
           
      
       
