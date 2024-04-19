@@ -12,16 +12,16 @@ const Index = () => {
       <div className={styles.container}>
         <div className={styles.RowFlex}>
           <div className={styles.W70}>
-            <ScrollAnimation delay={600} animateIn="fadeInUp">
+            <ScrollAnimation delay={600} animateOnce="true" animateIn="fadeInUp">
               <h1>Nature,</h1>
             </ScrollAnimation>
-            <ScrollAnimation delay={1200} animateIn="fadeInUp">
+            <ScrollAnimation delay={1200} animateOnce="true" animateIn="fadeInUp">
               <h2>Meet Pharma.</h2>
             </ScrollAnimation>
-            <ScrollAnimation delay={3000} animateIn="fadeInUp">
+            <ScrollAnimation delay={3000} animateOnce="true" animateIn="fadeInUp">
               <h3>Clinically Proven Ingredients</h3>
             </ScrollAnimation>
-            <ScrollAnimation delay={4000} animateIn="fadeInUp">
+            <ScrollAnimation delay={4000} animateOnce="true" animateIn="fadeInUp">
               <div className={styles.W80}>
                 <p>
                   When a company makes a claim, it should be transparent and
@@ -30,7 +30,7 @@ const Index = () => {
                 </p>
               </div>
             </ScrollAnimation>
-            <ScrollAnimation delay={5000} animateIn="fadeIn">
+            <ScrollAnimation delay={5000} animateOnce="true" animateIn="fadeIn">
               <div>
                 <button
                   onClick={toggleVisibility}
