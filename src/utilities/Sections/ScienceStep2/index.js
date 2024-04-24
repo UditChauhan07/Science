@@ -11,9 +11,7 @@ const Index = () => {
 
   return (
     <div className={`${styles.height100vh} ${styles.bg} `}>
-      <div className={styles.container}>
-        <div className={styles.RowFlex}>
-          <div className={styles.W70}>
+      <div className={styles.fireAbs}>
             <ul className={styles.fireflies}>
               <li></li>
               <li></li>
@@ -30,16 +28,28 @@ const Index = () => {
               <li></li>
               <li></li>
             </ul>
-
+          </div>
+      <div className={styles.container}>
+        <div className={styles.RowFlex}>
+          
+          <div className={styles.W70}>
             <ScrollAnimation delay={600} animateOnce="true" animateIn="fadeIn">
               <div className={styles.Mask}>
                 <h1>Understand the world</h1>
               </div>
             </ScrollAnimation>
-            <ScrollAnimation delay={2200} animateOnce="true" animateIn="fadeInUp">
+            <ScrollAnimation
+              delay={2200}
+              animateOnce="true"
+              animateIn="fadeInUp"
+            >
               <h3>Unlocking Nature’s Secrets</h3>
             </ScrollAnimation>
-            <ScrollAnimation delay={2500} animateOnce="true" animateIn="fadeInUp">
+            <ScrollAnimation
+              delay={2500}
+              animateOnce="true"
+              animateIn="fadeInUp"
+            >
               <div className={styles.W80}>
                 <p>
                   Polyphenols are compounds in many plant-based foods, such as
@@ -49,7 +59,7 @@ const Index = () => {
                 </p>
               </div>
             </ScrollAnimation>
-            <ScrollAnimation delay={2800}  animateOnce="true" animateIn="fadeIn">
+            <ScrollAnimation delay={2800} animateOnce="true" animateIn="fadeIn">
               <div>
                 <button
                   onClick={toggleVisibility}
@@ -66,7 +76,7 @@ const Index = () => {
           <span></span>
         ) : (
           <div
-            className={`${styles.hiddenParagraph} ${styles.animated} ${styles.flipInX}`}
+            className={`${styles.hiddenParagraph} ${styles.animated} ${styles.flipInX} `}
           >
             <div className={styles.container}>
               <h3>Understand the world</h3>

@@ -238,6 +238,41 @@ font-weight: 900;
 }
 
 
+
+@keyframes flipInX {
+  0% {
+      transform: perspective(800px) rotateX(-90deg);
+      animation-timing-function: ease-in;
+      opacity: 0;
+      
+  }   
+
+  40% {
+      transform: perspective(800px) rotateX(-0deg);
+      animation-timing-function: ease-in
+  }
+
+  60% {
+      transform: perspective(800px) rotateX(-0deg);
+      opacity: 1
+  }
+
+  80% {
+      transform: perspective(800px) rotateX(-0deg)
+  }
+
+  to {
+      transform: perspective(800px)
+  }
+}
+
+.flipInX {
+  backface-visibility: visible!important;
+  animation-name: flipInX;
+ 
+}
+
+
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -269,10 +304,12 @@ font-weight: 900;
 ul.fireflies {
   list-style: none;
 }
-.fireflies {
-  /* position: relative; */
-  /* position: absolute;  */
-}
+/* .fireflies {
+  position: relative;
+  position: absolute; 
+} */
+
+
 
 .fireflies li {
   border-radius: 30%;
@@ -482,36 +519,7 @@ ul.fireflies {
 }
 
 /* step2 end */
-@keyframes flipInX {
-  0% {
-      transform: perspective(800px) rotateX(-90deg);
-      animation-timing-function: ease-in;
-      opacity: 0
-  }   
 
-  40% {
-      transform: perspective(800px) rotateX(-0deg);
-      animation-timing-function: ease-in
-  }
-
-  60% {
-      transform: perspective(800px) rotateX(-0deg);
-      opacity: 1
-  }
-
-  80% {
-      transform: perspective(800px) rotateX(-0deg)
-  }
-
-  to {
-      transform: perspective(800px)
-  }
-}
-
-.flipInX {
-  backface-visibility: visible!important;
-  animation-name: flipInX
-}
 
 
 
