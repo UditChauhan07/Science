@@ -58,7 +58,7 @@
     background-repeat: no-repeat;
     background-position: right 0% bottom 35%;
     position: relative;
-    height: 79.8vh;
+    height: 80.5vh;
     transform: translate(0%, 5%);
   }
 .Title{
@@ -215,6 +215,7 @@
   margin: 20px 0px;
   color: #000;
   line-height: 24px;
+  font-weight: 400;
 }
 .ReadMoreBtn {
   background-color: #000;
@@ -297,16 +298,43 @@
   }
 }
 
-@-webkit-keyframes fadeInUp {
-  from {
-    transform: translate3d(0, 40px, 0);
-  }
 
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(-100%,0,0)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0)
+    }
 }
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+    animation-delay: 1s;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%,0,0)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0)
+    }
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+    animation-delay: 2s;
+}
+
+
+
 
 @keyframes flipInX {
   0% {
@@ -354,6 +382,20 @@
   opacity: 0;
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
+  animation-delay: 4s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
 }
 
 /* fade up end */
@@ -489,4 +531,20 @@
   justify-content: center;
   top: 47.5%;
   position: relative;
+}
+
+
+@keyframes slideInRight {
+    0% {
+        transform: translate3d(100%,0,0);
+        visibility: visible
+    }
+
+    to {
+        transform: translateZ(0)
+    }
+}
+
+.slideInRight {
+    animation-name: slideInRight
 }

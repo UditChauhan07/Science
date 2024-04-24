@@ -27,8 +27,6 @@ const Index = () => {
     }
   }, [isVisible]);
 
-  
-
   return (
     <div
       className={styles.height100vh}
@@ -85,14 +83,17 @@ const Index = () => {
           <span></span>
         ) : (
           <div
-            className={`scrollHidden ${styles.hiddenParagraph} ${styles.animated}  ${styles.fadeInUp} ${styles.animatedFadeInUp}`}
+            className={`scrollHidden ${styles.hiddenParagraph} ${styles.animated}  ${styles.fadeInUp1}`}
           >
-            <div className={`${styles.containerModal} ${styles.InnerModalBg}`}>
-              <div className={`${styles.Title}`}>
-                <img src="/images/BMD-Icon.png" />
-                <h3>Science</h3>
-                <h4>A human endeavor</h4>
-              </div>
+            <div className={`${styles.containerModal} ${styles.InnerModalBg}  ${styles.animated} ${styles.fadeIn}`}>
+              
+                <div className={`${styles.Title} ${styles.animated} ${styles.fadeInLeft}`}>
+                  <img src="/images/BMD-Icon.png" />
+                  <h3>Science</h3>
+                  <h4>A human endeavor</h4>
+                </div>
+             
+
               <div className={`${styles.ModalGraphic}`}>
                 <div class="loader">
                   <div class="dot"></div>
@@ -124,7 +125,7 @@ const Index = () => {
                 </div>
               </div>
               <div className={styles.InneerDiscription}>
-                <div className={`${styles.ModalTitle}`}>
+                <div className={`${styles.ModalTitle}  ${styles.animated} ${styles.fadeInRight}`}>
                   <h2>
                     Pharma, <br></br>Meet Nature
                   </h2>
@@ -138,36 +139,40 @@ const Index = () => {
                   </p>
                 </div>
 
-                <div className={`${styles.BottomDis}`}>
-                  <div className={`${styles.BottomImg}`}>
-                    <img src="/images/scienceNature.png" />
-                  </div>
+                
+                  <div className={`${styles.BottomDis} ${styles.animated}  ${styles.fadeInUp}`}>
+                    <div className={`${styles.BottomImg}`}>
+                      <img src="/images/scienceNature.png" />
+                    </div>
 
-                  <div id="ScrollRight" className={`${styles.Discription}`}>
-                    <p>
-                      We are the third-largest pharmaceutical company in Italy
-                      today. Knowing both sides, we understand that some
-                      solutions for improving health outcomes are pharma&apos;s
-                      job. Still, we also know that many diseases that lead to
-                      the necessity of pharmacological intervention are often
-                      preventable through leveraging the best ingredients that
-                      Nature has to offer and unlocking some of Nature&apos;s
-                      secrets that she is reluctant to share with us.
-                    </p>
-                    <p>
-                      One of the seemingly insurmountable problems of deploying
-                      nature-based solutions to improve health and longevity is
-                      the issue of bioavailability. In our pharmaceutical
-                      business, we customize molecules to interact with the
-                      human body in a precise and targeted way with largely
-                      predictable outcomes because we design them for specific
-                      receptors in the body. Nature does not play this way. Our
-                      bodies block many plant-based nutrients that would benefit
-                      our health. This low bioavailability is a function of
-                      evolution, and the problem is particularly acute with a
-                      special kind of plant nutrient known as polyphenols.{" "}
-                    </p>
-                  </div>
+                    <div id="ScrollRight" className={`${styles.Discription}`}>
+                      <p>
+                        We are the third-largest pharmaceutical company in Italy
+                        today. Knowing both sides, we understand that some
+                        solutions for improving health outcomes are
+                        pharma&apos;s job. Still, we also know that many
+                        diseases that lead to the necessity of pharmacological
+                        intervention are often preventable through leveraging
+                        the best ingredients that Nature has to offer and
+                        unlocking some of Nature&apos;s secrets that she is
+                        reluctant to share with us.
+                      </p>
+                      <p>
+                        One of the seemingly insurmountable problems of
+                        deploying nature-based solutions to improve health and
+                        longevity is the issue of bioavailability. In our
+                        pharmaceutical business, we customize molecules to
+                        interact with the human body in a precise and targeted
+                        way with largely predictable outcomes because we design
+                        them for specific receptors in the body. Nature does not
+                        play this way. Our bodies block many plant-based
+                        nutrients that would benefit our health. This low
+                        bioavailability is a function of evolution, and the
+                        problem is particularly acute with a special kind of
+                        plant nutrient known as polyphenols.{" "}
+                      </p>
+                    </div>
+                 
                 </div>
               </div>
             </div>
