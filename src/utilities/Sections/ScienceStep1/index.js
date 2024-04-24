@@ -87,7 +87,7 @@ const Index = () => {
           >
             <div className={`${styles.containerModal} ${styles.InnerModalBg}  ${styles.animated} ${styles.fadeIn}`}>
               
-                <div className={`${styles.Title} ${styles.animated} ${styles.fadeInLeft}`}>
+                <div className={`${styles.Title} ${styles.animated} ${styles.bounceInLeft}`}>
                   <img src="/images/BMD-Icon.png" />
                   <h3>Science</h3>
                   <h4>A human endeavor</h4>
@@ -125,7 +125,7 @@ const Index = () => {
                 </div>
               </div>
               <div className={styles.InneerDiscription}>
-                <div className={`${styles.ModalTitle}  ${styles.animated} ${styles.fadeInRight}`}>
+                <div className={`${styles.ModalTitle}  ${styles.animated} ${styles.fadeIn01}`}>
                   <h2>
                     Pharma, <br></br>Meet Nature
                   </h2>
@@ -140,7 +140,7 @@ const Index = () => {
                 </div>
 
                 
-                  <div className={`${styles.BottomDis} ${styles.animated}  ${styles.fadeInUp}`}>
+                  <div className={`${styles.BottomDis} ${styles.animated}  ${styles.flipInX}`}>
                     <div className={`${styles.BottomImg}`}>
                       <img src="/images/scienceNature.png" />
                     </div>

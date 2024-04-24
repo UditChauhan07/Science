@@ -93,6 +93,7 @@
       .ScienceScrollAnimation .footer {
         background: #000;
         color: #eee;
+        margin-top: 100px;
       }
       .ScienceScrollAnimation .footer__copyright {
         text-align: center;
@@ -225,6 +226,7 @@
         background-image: url("/images/Science-page-without-Doctor01.png");
         display: flex;
         flex-direction: column;
+        margin-top: 100px;
       }
       .ScienceScrollAnimation .section__science .section-card__content,
       .ScienceScrollAnimation .section__science .section-card__title {
@@ -259,6 +261,7 @@
         background-image: url("/images/Science-page-Step-2.png");
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 100px;
     
       }
       .ScienceScrollAnimation .section__third-container {
@@ -284,6 +287,7 @@
         background-repeat: no-repeat;
         /* z-index: -1; */
         position: relative;
+        margin-top: 100px;
 
       }
       .ScienceScrollAnimation .section__fourth-content {
@@ -305,6 +309,7 @@
     background-image: url("/images/Farm to Table.png");
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 100px;
       }
       .ScienceScrollAnimation .section__nature {
         position: relative;
@@ -312,7 +317,8 @@
     background-image: url("/images/Nature-meet-pharma.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right 40% bottom 45% !important;   
+    background-position: right 40% bottom 45% !important;
+    margin-top: 100px;   
       }
       .ScienceScrollAnimation button{
         border: unset;
