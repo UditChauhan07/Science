@@ -4,8 +4,8 @@
     background-image: url("/images/Science-page-Step-2.png");
     background-size: cover;
     background-repeat: no-repeat; */
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 .container {
   margin-left: auto;
@@ -13,7 +13,7 @@
   max-width: 1380px;
   width: 100%;
 }
-.hiddenParagraph .container{   
+.hiddenParagraph .container {
   background-image: url("/images/DNA-icon.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -40,27 +40,26 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.hiddenParagraph p{
+
+.hiddenParagraph p {
   color: #000;
   font-family: var(--bmd-font-Secondary);
-  font-size: 16px;
-  text-align: justify;
+  font-size: 16px;  
 }
-.hiddenParagraph h3{
-  padding-bottom: 20px;
 
+.hiddenParagraph h3 {
+  padding-bottom: 20px;
 }
 
 .W70 .ContentBox h1:nth-child(2) {
-  color: #63B8E6;
+  color: #63b8e6;
   /* color:  linear-gradient(90deg, #2f80cb, #68defa 90.94%); */
   /* color: linear-gradient(180deg, red, yellow); */
   animation: animate 4s ease-in-out infinite;
-  
+
   background-image: url("/images/bgBack.png");
   -webkit-background-clip: text;
   -webkit-background-clip: text;
- 
 }
 .W70 .ContentBox {
   position: relative;
@@ -72,53 +71,51 @@
   font-family: var(--bmd-font-Secondary);
   font-size: 113px;
   font-weight: 700;
-  line-height: 114px;  
-  
-
+  line-height: 114px;
 }
 
 .W70 .ContentBox h3:nth-child(1) {
   color: transparent;
-  -webkit-text-stroke: 4px #97AF98;
+  -webkit-text-stroke: 4px #97af98;
   /* text-shadow: 0px 2px 15px rgba(255, 255, 255, 0.21); */
   background: transparent;
 }
 
 .W70 .ContentBox h3:nth-child(2) {
-  
   color: transparent;
   background-image: url("/images/bgBack.png");
   -webkit-background-clip: text;
   -webkit-background-clip: text;
- 
 }
 
-
 @keyframes animate {
-
   0%,
   100% {
-      clip-path: polygon(0% 45%,
-              16% 44%,
-              33% 50%,
-              54% 60%,
-              70% 61%,
-              84% 59%,
-              100% 52%,
-              100% 100%,
-              0% 100%);
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
   }
 
   50% {
-      clip-path: polygon(0% 60%,
-              15% 65%,
-              34% 66%,
-              51% 62%,
-              67% 50%,
-              84% 45%,
-              100% 46%,
-              100% 100%,
-              0% 100%);
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
   }
 }
 
@@ -144,144 +141,135 @@
   width: 60%;
   line-height: 24px;
 }
-.ReadMoreBtnWhite { 
+.ReadMoreBtnWhite {
   background-color: #fff;
-    color: #000;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 15px 22px;
-    margin: 15px 0px;
-    font-family: var(--bmd-font-Secondary);
-    cursor: pointer;
-    
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 22px;
+  margin: 15px 0px;
+  font-family: var(--bmd-font-Secondary);
+  cursor: pointer;
 }
 
-.hiddenParagraph{
-  position: absolute;
+.hiddenParagraph {
+  position: fixed;
   background-color: #fff;
   padding: 20px 15px;
   width: 100%;
-  /* top: 0; */
   bottom: 0%;
   left: 0;
   transition-property: all;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  /* overflow: auto; */
-  /* max-height: 300px; */
   overflow-y: hidden;
-  /* max-height: 500px; */
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  border-radius: 20px 20px 0px 0px;
-  max-width: 1440px;
+  height: 100%;
   left: 0;
-  right: 0;    
-  margin:auto;  
+  right: 0;
+  margin: auto;
+  z-index: 11;
+  background-image: linear-gradient(to right, #E4E5DD ,#D3CFEB , #DDE2E6);
 }
-.hiddenParagraph h3{
+
+.hiddenParagraph h3 {
   color: #000;
-  font-size: 52px;
+  font-size: 60px;
   font-family: var(--bmd-font-Secondary);
   padding: 0 10px;
-  
+  width: 50%;
 }
-.hiddenParagraph p{
+.hiddenParagraph p {
   color: #000;
   font-family: var(--bmd-font-Secondary);
-  font-size: 16px;
-  text-align: justify;
+  font-size: 16px; 
   padding-bottom: 15px;
   line-height: 24px;
   padding: 0 15px 10px 15px;
 }
 
-.hiddenParagraph span{
-          background-color: #fff;
-          width: 30px;
+.hiddenParagraph span {
+  background-color: #fff;
+  width: 30px;
   font-family: var(--bmd-font-Secondary);
-font-weight: 900;
-          height: 30px;
-          border-radius: 100%;
-          border: 2px solid #000;
-      font-size: 17px;
-      color: #000;
-      position: absolute;
-      top: 5%;
-      right: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-  }
+  font-weight: 900;
+  height: 30px;
+  border-radius: 100%;
+  border: 2px solid #000;
+  font-size: 17px;
+  color: #000;
+  position: absolute;
+  top: 1%;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
 
-  /* Fade up css */
+/* Fade up css */
 @keyframes fadeInUp {
   from {
-      transform: translate3d(0,40px,0)
+    transform: translate3d(0, 40px, 0);
   }
 
   to {
-      transform: translate3d(0,0,0);
-      opacity: 1
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes fadeInUp {
   from {
-      transform: translate3d(0,40px,0)
+    transform: translate3d(0, 40px, 0);
   }
 
   to {
-      transform: translate3d(0,0,0);
-      opacity: 1
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 
-
-
 @keyframes flipInX {
   0% {
-      transform: perspective(800px) rotateX(-90deg);
-      animation-timing-function: ease-in;
-      opacity: 0;
-      
-  }   
+    transform: perspective(800px) rotateX(-90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
 
   40% {
-      transform: perspective(800px) rotateX(-0deg);
-      animation-timing-function: ease-in
+    transform: perspective(800px) rotateX(-0deg);
+    animation-timing-function: ease-in;
   }
 
   60% {
-      transform: perspective(800px) rotateX(-0deg);
-      opacity: 1
+    transform: perspective(800px) rotateX(-0deg);
+    opacity: 1;
   }
 
   80% {
-      transform: perspective(800px) rotateX(-0deg)
+    transform: perspective(800px) rotateX(-0deg);
   }
 
   to {
-      transform: perspective(800px)
+    transform: perspective(800px);
   }
 }
 
 .flipInX {
-  backface-visibility: visible!important;
+  backface-visibility: visible !important;
   animation-name: flipInX;
- 
+  animation-delay: 2s;
 }
-
 
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
   -webkit-animation-duration: 1s;
-  -webkit-animation-fill-mode: both
+  -webkit-animation-fill-mode: both;
 }
 
 .animatedFadeInUp {
-  opacity: 0
+  opacity: 0;
 }
 
 .fadeInUp {
@@ -308,8 +296,6 @@ ul.fireflies {
   position: relative;
   position: absolute; 
 } */
-
-
 
 .fireflies li {
   border-radius: 30%;
@@ -441,7 +427,7 @@ ul.fireflies {
   animation-duration: 59s, 75s, 0.01s;
   animation-fill-mode: backwards, backwards;
 }
-.W80 p{
+.W80 p {
   line-height: 30px !important;
 }
 
@@ -502,7 +488,7 @@ ul.fireflies {
     box-shadow: 0 0 0px 1px rgb(250, 193, 93), 0 0 0px 0px rgb(255, 242, 63),
       0 0 20px 5px rgb(255, 219, 41);
     height: 0;
-    width: 0;    
+    width: 0;
   }
 
   /* 50% { 
@@ -521,9 +507,285 @@ ul.fireflies {
 /* step2 end */
 
 
+.containerModal {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;  
+  transform: translate(0%, 5%);  
+}
+.BottomDis{
+  width: 98%;
+  display: flex;
+  background-color: #ffffff29;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  margin: auto;
+  
+}
+.BottomDis p{
+  font-weight: 400;
+}
+.BottomImg{    
+  width: 100%;
+  margin: auto;
+  border-radius: 13px;
+  overflow: hidden;
+  display: flex;
+  max-width: 270px;
+}
+.InneerDiscription{
+  width: 50%;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.Discription{
+  margin: auto;
+  height: 270px;
+  overflow: auto;
+}
+@keyframes bounceInLeft {
+  0%,60%,75%,90%,to {
+      animation-timing-function: cubic-bezier(.215,.61,.355,1)
+  }
 
+  0% {
+      opacity: 0;
+      transform: translate3d(-3000px,0,0)
+  }
 
+  60% {
+      opacity: 1;
+      transform: translate3d(25px,0,0)
+  }
+
+  75% {
+      transform: translate3d(-10px,0,0)
+  }
+
+  90% {
+      transform: translate3d(5px,0,0)
+  }
+
+  to {
+      transform: translateZ(0)
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+  animation-delay: 1s;  
+}
+
+.NatureSecretsImg{
+  position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    display: flex;
+}
+
+@keyframes draw {
+  from {
+      stroke-dashoffset: 1000;      
+  }
+  to {
+      stroke-dashoffset: 0;     
+     
+  }
+  0% {
+    opacity: 0.5;
+    fill: none; 
+  }
+  
+}
+.NatureSecretsImg svg{
+  position: relative;
+  left: 29%;
+  z-index: -1;
+}
+.NatureSecretsImg svg.TriangleShape{
+  left: 38%;
+}
+.NatureSecretsImg svg.DiagramShape{
+  left: 20%;
+  top: 1%;
+  
+}
+ 
+.NatureSecretsImg path
+ {  
+  stroke: #428B3D;
+  stroke-width: 1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: draw 3s linear forwards ;
+  animation: draw 3s linear forwards ;
+}
+
+@keyframes SecondShape {
+  from {
+      stroke-dashoffset: 1000;
+      opacity: 0.2;      
+  }
+  to {
+      stroke-dashoffset: 0;     
+     
+  }
+  0% {
+    opacity: 0.3;
+    fill: none; 
+  }
+  20% {
+    opacity: 0.4;
+    fill: none; 
+  }
+  50% {
+    opacity: 0.4;
+    
+  }
+  90% {
+    opacity: 0.5;
+    
+  }  
+  
+}
+.NatureSecretsImg .SecondShape
+ {  
+  stroke: #849b82;
+  stroke-width: 0;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: SecondShape 2s linear forwards ;
+  animation: SecondShape 2s linear forwards ;
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translate3d(0,100%,0)
+  }
+
+  to {
+      opacity: 1;
+      transform: translateZ(0)
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-delay: 4s;
+}
+
+.diagram img{
+  position: relative;
+  -webkit-animation: bounce 3s infinite;
+  -moz-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0px;
+  }
+
+  50% {
+    top: 20px;
+    
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+.diagram{
+  position: relative;
+  right: 14%;
+}
+
+@keyframes fadeInLeft {
+  0% {
+      opacity: 0;
+      transform: translate3d(-100%,0,0)
+  }
+
+  to {
+      opacity: 1;
+      transform: translateZ(0)
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+  animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      scale: 1.1;
+  }
+
+  to {
+      opacity: 1;
+
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-delay: 1.6s;
+}
+
+@keyframes fadeIn02 {
+  0% {
+      opacity: 0;
+      scale: 0.1;
+  }
+
+  to {
+      opacity: 1;
+      scale: 1;
+  }
+}
+
+.fadeIn02 {
+  animation-name: fadeIn02;
+  animation-delay: 1.4s;
+}
 @media (max-width: 1599.98px) {
+  .TriangleShape{
+    width: 50%;
+  }
+  .DiagramShape{
+    width: 50%;
+  }
+  .InneerDiscription {
+    width: 65%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+  .hiddenParagraph h3 {    
+    font-size: 50px;
+    
+}
+  .NatureSecretsImg {    
+    width: 68%;
+    align-items: center;
+}
+  .Discription {
+    height: 150px;
+    overflow: auto;
+}
+  .BottomDis{
+    position: absolute;
+    bottom: -25%;
+  }
+  .BottomImg{ 
+    max-width: 150px;
+  }
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -547,11 +809,10 @@ ul.fireflies {
     overflow: hidden;
     margin-top: 0;
   }
-  .InneerDiscription{
+  .InneerDiscription {
     height: 350px;
     overflow: auto;
   }
-  
 }
 @media (max-width: 1100px) {
   .container {
@@ -603,8 +864,7 @@ ul.fireflies {
   .hiddenParagraph h3 {
     color: #000;
     font-size: 30px;
-   
-}
+  }
 }
 @media (max-width: 475px) {
   .container {
