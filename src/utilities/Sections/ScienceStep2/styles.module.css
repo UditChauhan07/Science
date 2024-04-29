@@ -153,8 +153,7 @@
 }
 
 .hiddenParagraph {
-  position: fixed;
-  background-color: #fff;
+  position: fixed;  
   padding: 20px 15px;
   width: 100%;
   bottom: 0%;
@@ -168,23 +167,25 @@
   right: 0;
   margin: auto;
   z-index: 11;
-  background-image: linear-gradient(to right, #E4E5DD ,#D3CFEB , #DDE2E6);
+  background-image: linear-gradient(to right, #1c2f1bad, #1c2f1bcf, #1c2f1b99);
+  backdrop-filter: blur(10px);
 }
 
 .hiddenParagraph h3 {
-  color: #000;
+  color: #fff;
   font-size: 60px;
   font-family: var(--bmd-font-Secondary);
   padding: 0 10px;
   width: 50%;
 }
 .hiddenParagraph p {
-  color: #000;
+  color: #fff;
   font-family: var(--bmd-font-Secondary);
   font-size: 16px; 
   padding-bottom: 15px;
   line-height: 24px;
   padding: 0 15px 10px 15px;
+  font-weight: 300;
 }
 
 .hiddenParagraph span {
@@ -525,7 +526,7 @@ ul.fireflies {
   
 }
 .BottomDis p{
-  font-weight: 400;
+  font-weight: 300;
 }
 .BottomImg{    
   width: 100%;
@@ -600,6 +601,17 @@ ul.fireflies {
   }
   
 }
+
+.NatureSecretsImg path
+ {  
+  stroke: #8DC640;
+  stroke-width: 1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: draw 3s linear forwards ;
+  animation: draw 3s linear forwards ;
+}
+
 .NatureSecretsImg svg{
   position: relative;
   left: 29%;
@@ -614,15 +626,7 @@ ul.fireflies {
   
 }
  
-.NatureSecretsImg path
- {  
-  stroke: #428B3D;
-  stroke-width: 1;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  -webkit-animation: draw 3s linear forwards ;
-  animation: draw 3s linear forwards ;
-}
+
 
 @keyframes SecondShape {
   from {

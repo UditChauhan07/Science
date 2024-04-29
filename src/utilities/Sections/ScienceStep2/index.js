@@ -146,7 +146,6 @@ const Index = () => {
 </svg>
 
 <div className={`${styles.diagram} ${styles.animated} ${styles.fadeInUp01}`}>
- {/* <img  src="/images/LeafPolyhenols.svg" /> */}
  
  <svg className={`${styles.TriangleShape} ${styles.animated} ${styles.fadeIn02}`} width="550" height="429" viewBox="0 0 550 429" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path className={`${styles.SecondShape}`} opacity="0.5" d="M2.25098 259.819L503.015 1.65479L548.464 428.019L2.25098 259.819Z" fill="white" stroke="#466677" stroke-miterlimit="10"/>
