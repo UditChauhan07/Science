@@ -27,10 +27,10 @@ const Index = () => {
                 <h1 className={styles.animateCh}>Farm to Table.</h1>
               </div>
             </ScrollAnimation>
-            <ScrollAnimation delay={2000} animateOnce="true" animateIn="fadeIn">
+            <ScrollAnimation delay={1500} animateOnce="true" animateIn="fadeIn">
               <h3>Rooted in Italian Soil</h3>
             </ScrollAnimation>
-            <ScrollAnimation delay={2500} animateOnce="true" animateIn="fadeIn">
+            <ScrollAnimation delay={1800} animateOnce="true" animateIn="fadeIn">
               <div className={styles.W80}>
                 <p>
                   If you take supplements, you should be aware that the
@@ -39,7 +39,7 @@ const Index = () => {
                 </p>
               </div>
             </ScrollAnimation>
-            <ScrollAnimation delay={2800} animateOnce="true" animateIn="fadeIn">
+            <ScrollAnimation delay={2000} animateOnce="true" animateIn="fadeIn">
               <div>
                 <button
                   onClick={toggleVisibility}

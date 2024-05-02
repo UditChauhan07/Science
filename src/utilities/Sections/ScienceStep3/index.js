@@ -36,7 +36,7 @@ const Index = () => {
               <h2>Longevity.</h2>
             </ScrollAnimation>
             <ScrollAnimation
-              delay={3000}
+              delay={1500}
               animateOnce="true"
               animateIn="fadeInUp"
             >
@@ -45,7 +45,7 @@ const Index = () => {
               </h3>
             </ScrollAnimation>
             <ScrollAnimation
-              delay={3500}
+              delay={1800}
               animateOnce="true"
               animateIn="fadeInUp"
             >
@@ -58,7 +58,7 @@ const Index = () => {
                 </p>
               </div>
             </ScrollAnimation>
-            <ScrollAnimation delay={3800} animateOnce="true" animateIn="fadeIn">
+            <ScrollAnimation delay={2000} animateOnce="true" animateIn="fadeIn">
               <div>
                 <button
                   onClick={toggleVisibility}

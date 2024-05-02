@@ -53,10 +53,10 @@ const Index = () => {
             >
               <h2>A human endeavor.</h2>
             </ScrollAnimation>
-            <ScrollAnimation delay={3300} animateOnce="true" animateIn="fadeIn">
+            <ScrollAnimation delay={1500} animateOnce="true" animateIn="fadeIn">
               <h3>Pharma, Meet Nature</h3>
             </ScrollAnimation>
-            <ScrollAnimation delay={3600} animateOnce="true" animateIn="fadeIn">
+            <ScrollAnimation delay={1800} animateOnce="true" animateIn="fadeIn">
               <div className={styles.W80}>
                 <p>
                   Bruno MD is committed to furthering our understanding of the
@@ -66,7 +66,7 @@ const Index = () => {
                 </p>
               </div>
             </ScrollAnimation>
-            <ScrollAnimation delay={3800} animateOnce="true" animateIn="fadeIn">
+            <ScrollAnimation delay={2000} animateOnce="true" animateIn="fadeIn">
               <div>
                 <button
                   onClick={toggleVisibility}
