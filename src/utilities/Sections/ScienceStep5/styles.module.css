@@ -115,26 +115,22 @@
 
 
 .hiddenParagraph{
-  position: absolute;
-  background-color: #fff;
+  position: fixed;
+  background-color: #ffffffb5;
   padding: 20px 15px;
-  width: 100%;
-  /* top: 0; */
+  width: 100%;  
   bottom: 0%;
   left: 0;
   transition-property: all;
   transition-duration: .5s;
-  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  /* overflow: auto; */
-  /* max-height: 300px; */
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);  
   overflow-y: hidden;
-  /* max-height: 500px; */
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  border-radius: 20px 20px 0px 0px;
-  max-width: 1440px;
+  height: 100%;
   left: 0;
   right: 0;    
   margin:auto;
+  z-index: 11;
+  backdrop-filter: blur(10px);
   
 }
 .hiddenParagraph h3{
@@ -147,8 +143,7 @@
 .hiddenParagraph p{
   color: #000;
   font-family: var(--bmd-font-Secondary);
-  font-size: 16px;
-  text-align: justify;
+  font-size: 16px;  
   padding-bottom: 15px;
   line-height: 24px;
   padding: 0 15px 10px 15px;
@@ -165,7 +160,7 @@ font-weight: 900;
       font-size: 17px;
       color: #000;
       position: absolute;
-      top: 5%;
+      top: 1%;
       right: 30px;
       display: flex;
       justify-content: center;
@@ -246,9 +241,98 @@ font-weight: 900;
 /* fade up end */
 
 
+.containerModal {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  transform: translate(0%, 10%);
+  background-color: #FBFBFB;
+  padding: 30px 30px;
+}
 
+.HeadingItalianSoli h3, .HeadingItalianSoli h4{
+  font-size: 60px;
+  font-family: var(--bmd-font-Secondary);
+  color: #167E17;
+  padding: 0 10px;
+}
+
+.HeadingItalianSoli h3{  
+  font-weight: 100;
+}
+.HeadingItalianSoli h4{ 
+  font-weight: 800;
+}
+
+.InneerDiscription {
+  width: 37.8%;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+@keyframes bounceInLeft {
+  0%,60%,75%,90%,to {
+      animation-timing-function: cubic-bezier(.215,.61,.355,1)
+  }
+
+  0% {
+      opacity: 0;
+      transform: translate3d(-3000px,0,0)
+  }
+
+  60% {
+      opacity: 1;
+      transform: translate3d(25px,0,0)
+  }
+
+  75% {
+      transform: translate3d(-10px,0,0)
+  }
+
+  90% {
+      transform: translate3d(5px,0,0)
+  }
+
+  to {
+      transform: translateZ(0)
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+  animation-delay: 1s;  
+}
+
+.PlantAnimationRight{ 
+  height: 100%;
+  width: 60%;
+  position: absolute;
+  right: 0;
+  border-radius: 562px 0px 0px 315px;
+  top: 0;
+  z-index: 0;
+  background-image: linear-gradient(#132022, #000);
+  display: flex;
+  justify-content: center;
+  
+}
+.Margin6{
+  margin: 6% 0;
+}
 
 @media (max-width: 1599.98px) {
+  .containerModal {
+   
+    transform: translate(0%, 5%);
+   
+  }
+
+  .Margin6{
+    margin: 2% 0;
+  }
+  .HeadingItalianSoli h3, .HeadingItalianSoli h4 {
+    font-size: 50px;
+   
+}
   .container {
     margin-left: auto;
     margin-right: auto;

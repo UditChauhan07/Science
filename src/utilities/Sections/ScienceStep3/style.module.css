@@ -354,10 +354,10 @@
   .BottomDis{
     width: 98%;
     display: flex;
-    background-color: #09458b45;
+    background-color: #92dcff57;
     border-radius: 20px;
     border: 1px solid #fff;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(4px);
     padding: 30px;
     margin: auto;
     position: relative;
