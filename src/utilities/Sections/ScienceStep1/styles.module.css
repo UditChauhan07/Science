@@ -1,11 +1,10 @@
 @font-face {
-    font-family: "Gotham";
-    src: url("https://cdn.shopify.com/s/files/1/0674/0518/5339/t/2/assets/GothamSSm-Light_Web.woff?v=175273074723104644111668075946");
-    font-style: normal;
-    font-weight: 100;
-    font-display: swap;
-  }
-
+  font-family: "Gotham";
+  src: url("https://cdn.shopify.com/s/files/1/0674/0518/5339/t/2/assets/GothamSSm-Light_Web.woff?v=175273074723104644111668075946");
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
 
 .height100vh {
   background-image: url("/images/science-doctr-man.png");
@@ -53,89 +52,89 @@
   background-position: right 0% bottom 35%;
 }
 .hiddenParagraph .InnerModalBg {
-    background-image: url("/images/bgshapeCut.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right 0% bottom 35%;
-    position: relative;
-    height: 80.5vh;
-    transform: translate(0%, 5%);
-  }
-.Title{
-    background-color: #DCEBED;
-    display: inline-block;
-    border-radius: 30px;
-    padding: 52px 35px;
-    position: absolute;
-    top: 7%;
+  background-image: url("/images/bgshapeCut.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right 0% bottom 35%;
+  position: relative;
+  height: 80.5vh;
+  transform: translate(0%, 5%);
+}
+.Title {
+  background-color: #dcebed;
+  display: inline-block;
+  border-radius: 30px;
+  padding: 52px 35px;
+  position: absolute;
+  top: 7%;
 }
 .Title img {
-    height: 90px;
-    width: 90px;
-    display: flex;
-    border-radius: 100px;
-    position: absolute;
-    top: -50px;
+  height: 90px;
+  width: 90px;
+  display: flex;
+  border-radius: 100px;
+  position: absolute;
+  top: -50px;
 }
-.ModalTitle h2{
-    font-size: 70px !important;
-    font-family: var(--bmd-font-Secondary);
-    font-weight: 400;
-    color: #000;
-    text-align: end;
+.ModalTitle h2 {
+  font-size: 70px !important;
+  font-family: var(--bmd-font-Secondary);
+  font-weight: 400;
+  color: #000;
+  text-align: end;
 }
-.ModalTitle p{
-    font-family: var(--bmd-font-Secondary);
-    font-weight: 400;
-    margin: 20px 0px 15px 0px;
+.ModalTitle p {
+  font-family: var(--bmd-font-Secondary);
+  font-weight: 400;
+  margin: 20px 0px 15px 0px;
 }
-.Title h3{
-    font-size: 106px !important;
-    font-family: var(--bmd-font-Secondary);
-    font-weight: 800;
+.Title h3 {
+  font-size: 106px !important;
+  font-family: var(--bmd-font-Secondary);
+  font-weight: 800;
 }
-.Title h4{
-    font-size: 45px !important;
-    font-family: var(--bmd-font-Secondary);
-    font-weight: 100 !important;
-    color: #000;
+.Title h4 {
+  font-size: 45px !important;
+  font-family: var(--bmd-font-Secondary);
+  font-weight: 100 !important;
+  color: #000;
 }
-.ModalTitle {    
-    top: 35px;
-    width: 31vw;
-    float: right;
-    position: relative;
-    right: 34px;
+.ModalTitle {
+  top: 35px;
+  width: 31vw;
+  float: right;
+  position: relative;
+  right: 34px;
 }
-.BottomDis{
-    width: 96%;
-    display: flex;
-    background-color: #ffffff29;
-    border-radius: 20px;
-    border: 1px solid #fff;
-    backdrop-filter: blur(10px);
-    padding: 30px;
-    margin: auto;
-    position: absolute;
-    bottom: 35px;
-    left: 0;
-    right: 0;
+.BottomDis {
+  width: 96%;
+  display: flex;
+  background-color: #ffffff29;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  margin: auto;
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  right: 0;
 }
-.BottomDis p{
-    font-weight: 400;
+.BottomDis p {
+  font-weight: 400;
 }
-.BottomImg{    
-    width: 100%;
-    margin: auto;
-    border-radius: 13px;
-    overflow: hidden;
-    display: flex;
-    max-width: 335px;
+.BottomImg {
+  width: 100%;
+  margin: auto;
+  border-radius: 13px;
+  overflow: hidden;
+  display: flex;
+  max-width: 335px;
 }
-.Discription{
-    margin: auto;
-    height: 215px;
-    overflow: auto;
+.Discription {
+  margin: auto;
+  height: 215px;
+  overflow: auto;
 }
 
 .RowFlex {
@@ -298,104 +297,105 @@
   }
 }
 
-
 @keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        transform: translate3d(-100%,0,0)
-    }
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateZ(0)
-    }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
 }
 
 .fadeInLeft {
-    animation-name: fadeInLeft;
-    animation-delay: 1s;
+  animation-name: fadeInLeft;
+  animation-delay: 1s;
 }
 
 @keyframes fadeInRight {
-    0% {
-        opacity: 0;
-        transform: translate3d(100%,0,0)
-    }
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateZ(0)
-    }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
 }
 
 .fadeInRight {
-    animation-name: fadeInRight;
-    animation-delay: 2s;
+  animation-name: fadeInRight;
+  animation-delay: 2s;
 }
 
 @keyframes bounceInLeft {
-    0%,60%,75%,90%,to {
-        animation-timing-function: cubic-bezier(.215,.61,.355,1)
-    }
+  0%,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
 
-    0% {
-        opacity: 0;
-        transform: translate3d(-3000px,0,0)
-    }
-bl
-    60% {
-        opacity: 1;
-        transform: translate3d(25px,0,0)
-    }
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+  bl 60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
 
-    75% {
-        transform: translate3d(-10px,0,0)
-    }
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
 
-    90% {
-        transform: translate3d(5px,0,0)
-    }
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
 
-    to {
-        transform: translateZ(0)
-    }
+  to {
+    transform: translateZ(0);
+  }
 }
 
 .bounceInLeft {
-    animation-name: bounceInLeft;
-    
+  animation-name: bounceInLeft;
 }
 
 @keyframes flipInX {
-    0% {
-        transform: perspective(400px) rotateX(90deg);
-        animation-timing-function: ease-in;
-        opacity: 0
-    }
+  0% {
+    transform: perspective(400px) rotateX(90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
 
-    40% {
-        transform: perspective(400px) rotateX(-20deg);
-        animation-timing-function: ease-in
-    }
+  40% {
+    transform: perspective(400px) rotateX(-20deg);
+    animation-timing-function: ease-in;
+  }
 
-    60% {
-        transform: perspective(400px) rotateX(10deg);
-        opacity: 1
-    }
+  60% {
+    transform: perspective(400px) rotateX(10deg);
+    opacity: 1;
+  }
 
-    80% {
-        transform: perspective(400px) rotateX(-5deg)
-    }
+  80% {
+    transform: perspective(400px) rotateX(-5deg);
+  }
 
-    to {
-        transform: perspective(400px)
-    }
+  to {
+    transform: perspective(400px);
+  }
 }
 
 .flipInX {
-    backface-visibility: visible!important;
-    animation-name: flipInX;
-    animation-delay: 5s;
+  backface-visibility: visible !important;
+  animation-name: flipInX;
+  animation-delay: 5s;
 }
 
 @keyframes flipInX {
@@ -428,7 +428,6 @@ bl
   backface-visibility: visible !important;
   animation-name: flipInX;
   animation-delay: 1.5s;
-
 }
 
 .animated {
@@ -449,70 +448,64 @@ bl
   animation-delay: 4s;
 }
 @keyframes fadeIn {
-    0% {
-        opacity: 0
-    }
+  0% {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .fadeIn {
-    animation-name: fadeIn;
-    
+  animation-name: fadeIn;
 }
 @keyframes fadeIn01 {
-    0% {
-        opacity: 0
-    }
+  0% {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .fadeIn01 {
-    animation-name: fadeIn01;
-    animation-delay: 1s;
-    
+  animation-name: fadeIn01;
+  animation-delay: 1s;
 }
 
 /* fade up end */
 
 @media (max-width: 1599.98px) {
-    .BottomDis {
-        width: 94%;
-        
-    }
-    .Title {       
-        top: 8%;
-        padding: 35px 35px;
-    }
-    .hiddenParagraph .InnerModalBg {        
-        height: 80.8vh;
-        transform: translate(0%, 5%);       
-    }
-    .Title h4 {
-        font-size: 30px !important;
-        
-    }
-    .Title h3 {
-        font-size: 70px !important;
-        
-    }
+  .BottomDis {
+    width: 94%;
+  }
+  .Title {
+    top: 8%;
+    padding: 35px 35px;
+  }
+  .hiddenParagraph .InnerModalBg {
+    height: 80.8vh;
+    transform: translate(0%, 5%);
+  }
+  .Title h4 {
+    font-size: 30px !important;
+  }
+  .Title h3 {
+    font-size: 70px !important;
+  }
 
-    .ModalTitle h2{
-        font-size: 50px !important;        
-    }
-    .Discription {
-       
-        height: 140px;
-        overflow: auto;
-    }
-    .BottomImg {       
-        max-width: 200px;
-    }
+  .ModalTitle h2 {
+    font-size: 50px !important;
+  }
+  .Discription {
+    height: 140px;
+    overflow: auto;
+  }
+  .BottomImg {
+    max-width: 200px;
+  }
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -546,16 +539,53 @@ bl
     font-size: 14px;
     margin: 10px 0px 15px 0px;
   }
-  
 }
 
 @media (max-width: 1100px) {
+
+  .Discription {
+    height: 100px;    
+}
+
+  .ModalTitle {   
+    width: 30vw;    
+}
+  .ModalTitle h2 {
+    font-size: 35px !important;
+  }
   .container {
     max-width: 900px;
   }
 }
 
 @media (max-width: 768px) {
+
+  .Title img {
+    height: 60px;
+    width: 60px;    
+    top: -35px;
+}
+  .ModalTitle p {
+    padding: 0 0px 10px 15px;
+}
+  .ModalTitle {
+    width: 40vw;
+}
+  .Discription {
+    height: 100px;
+    width: 100%;
+}
+.Title h4 {
+  font-size: 25px !important;
+  padding: 0 10px;
+}
+.Title h3 {
+  font-size: 40px !important;
+  
+}
+  .BottomImg {
+    max-width: 140px;
+}
   .container {
     max-width: 650px;
   }
@@ -570,6 +600,33 @@ bl
   }
 }
 @media (max-width: 575px) {
+  .Title {
+    top: 0%;
+    padding: 25px 25px;
+}
+  .BottomDis {
+    width: 90%;
+}
+
+  .BottomDis {    
+    padding: 15px;   
+}
+  .ModalTitle h2 {
+    font-size: 25px !important;
+}
+
+  .hiddenParagraph { 
+    padding: 20px 20px;   
+}
+.ModalTitle {
+  width: 85vw;
+  right: 20px;
+  top: 117px;
+}
+
+  .ModalGraphic {    
+    opacity: 0.2;
+}
   .container {
     max-width: 90%;
   }
@@ -598,14 +655,16 @@ bl
 }
 
 @media (max-width: 475px) {
+  .BottomImg {
+    max-width: 100px;
+}
   .container {
     max-width: 90%;
   }
 }
 
-
-.ModalGraphic{
-    align-items: center;
+.ModalGraphic {
+  align-items: center;
   background: #ffffff;
   display: flex;
   justify-content: center;
@@ -613,18 +672,44 @@ bl
   position: relative;
 }
 
-
 @keyframes slideInRight {
-    0% {
-        transform: translate3d(100%,0,0);
-        visibility: visible
-    }
+  0% {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
 
-    to {
-        transform: translateZ(0)
-    }
+  to {
+    transform: translateZ(0);
+  }
 }
 
 .slideInRight {
-    animation-name: slideInRight
+  animation-name: slideInRight;
 }
+@media (max-width: 400px) {
+  .ModalTitle {
+    width: 80vw;  
+  }
+  .Title h4 {
+    font-size: 20px !important;    
+}
+.Title h3 {
+  font-size: 30px !important;
+}
+.hiddenParagraph .InnerModalBg{
+  height: 88.8vh;  
+}
+.BottomImg {
+  max-width: 70px;
+}
+.styles_Discription__ebBcv {
+  height: 80px;
+  width: 100%;
+}
+.Discription {
+  height: 80px;  
+}
+
+
+}
+

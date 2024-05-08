@@ -819,6 +819,17 @@ ul.fireflies {
   }
 }
 @media (max-width: 1100px) {
+  .Discription {
+    height: 109px;   
+}
+.BottomDis { 
+  padding: 20px;
+  bottom: -35%;
+ 
+}
+  .hiddenParagraph h3 {
+    font-size: 35px;
+}
   .container {
     max-width: 900px;
   }
@@ -828,6 +839,22 @@ ul.fireflies {
   }
 }
 @media (max-width: 768px) {
+  .BottomDis {    
+    bottom: -40%;
+}
+  .InneerDiscription {
+    height: 335px;    
+}
+  .NatureSecretsImg {
+    width: 90%;    
+}
+  .Discription {
+    height: 110px;
+    width: 100%;
+}
+  .BottomImg {
+    max-width: 110px;
+}
   .container {
     max-width: 90%;
   }
@@ -866,9 +893,20 @@ ul.fireflies {
     width: 100%;
   }
   .hiddenParagraph h3 {
-    color: #000;
+    color: #ffffff;
     font-size: 30px;
+    width: 100%;
   }
+  .InneerDiscription {
+    width: 95%;    
+}
+.NatureSecretsImg {
+  width: 100%;
+}
+.NatureSecretsImg svg.TriangleShape { 
+  top: -15px !important;
+}
+
 }
 @media (max-width: 475px) {
   .container {
