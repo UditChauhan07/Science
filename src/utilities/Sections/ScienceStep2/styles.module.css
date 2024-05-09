@@ -912,4 +912,21 @@ ul.fireflies {
   .container {
     max-width: 90%;
   }
+  
+}
+@media (max-width: 375px) {
+  .BottomDis {
+    padding: 10px;
+    bottom: -35%;
+}
+.Discription {
+  height: 75px; 
+}
+.BottomImg {
+  max-width: 75px;
+}
+ 
+  .hiddenParagraph h3 {    
+    font-size: 25px;    
+  }
 }
